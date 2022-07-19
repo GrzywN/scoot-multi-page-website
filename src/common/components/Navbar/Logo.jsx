@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import logo from "../../assets/logo.svg";
+import logo from "../../../assets/logo.svg";
 
 function Logo({ className }) {
   return (
