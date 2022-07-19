@@ -19,5 +19,6 @@ module.exports = {
   plugins: ["react", "prettier", "tailwindcss"],
   rules: {
     "react/react-in-jsx-scope": "off",
+    "import/no-extraneous-dependencies": "off",
   },
 };
