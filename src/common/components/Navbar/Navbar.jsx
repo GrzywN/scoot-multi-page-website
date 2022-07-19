@@ -7,6 +7,7 @@ import Backdrop from "./Backdrop";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const switchIsMenuOpen = () => setIsMenuOpen((prevState) => !prevState);
+
   return (
     <header
       className="
