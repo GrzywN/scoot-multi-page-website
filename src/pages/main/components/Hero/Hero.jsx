@@ -1,4 +1,4 @@
-import GetScootinButton from "../../../../common/components/GetScootinButton";
+import CTA from "../../../../common/components/CTA";
 import rightArrow from "../../../../assets/patterns/right-arrow.svg";
 import whiteCircles from "../../../../assets/patterns/white-circles.svg";
 import line from "../../../../assets/patterns/line.svg";
@@ -34,7 +34,7 @@ function Hero() {
           convenient locations in each of our cities. Use our app to locate the
           nearest bike, unlock it with a tap, and you’re away!
         </p>
-        <GetScootinButton className="max-w-[11.25rem] lg:translate-x-[5.9375rem]" />
+        <CTA className="max-w-[11.25rem] lg:translate-x-[5.9375rem]" />
       </div>
       <img
         className="

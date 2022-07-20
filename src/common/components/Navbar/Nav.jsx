@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import GetScootinButton from "../GetScootinButton";
+import CTA from "../CTA";
 
 function Nav({ isMenuOpen }) {
   return (
@@ -9,12 +9,12 @@ function Nav({ isMenuOpen }) {
       } 
       fixed top-16 bottom-0 left-0 z-50 flex w-full max-w-[16rem] origin-top-left flex-col 
         justify-between bg-dark-navy px-8 pb-6 pt-16 transition duration-500 ease-in-out 
-      sm:static sm:max-w-none sm:scale-x-100 sm:flex-row sm:items-center sm:bg-white sm:p-0 sm:opacity-100`}
+      md:static md:max-w-none md:scale-x-100 md:flex-row md:items-center md:bg-white md:p-0 md:opacity-100`}
     >
       <ul
         className="
         grid gap-6 font-nav-list text-nav-list text-light-grey
-        sm:flex sm:gap-8 sm:text-dim-grey"
+        md:flex md:gap-8 md:text-body md:text-dim-grey"
       >
         <li>
           <a href="/about">About</a>
@@ -26,7 +26,7 @@ function Nav({ isMenuOpen }) {
           <a href="/careers">Careers</a>
         </li>
       </ul>
-      <GetScootinButton />
+      <CTA />
     </nav>
   );
 }

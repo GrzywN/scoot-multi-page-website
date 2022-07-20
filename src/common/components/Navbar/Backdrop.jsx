@@ -5,7 +5,7 @@ function Backdrop({ isMenuOpen, onClick }) {
     <div
       className={`${isMenuOpen ? "opacity-1" : "pointer-events-none opacity-0"} 
       fixed inset-0 top-16 z-10 cursor-auto bg-black/75 transition-opacity duration-500 ease-in-out 
-      sm:hidden`}
+      md:hidden`}
       onClick={onClick}
       onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onClick()}
       role="button"
