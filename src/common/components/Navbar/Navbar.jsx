@@ -21,7 +21,7 @@ function Navbar() {
         xl:ml-1 xl:p-0"
       >
         <Hamburger isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
-        <Logo className="md:mr-[5.625rem]" />
+        <Logo className="md:mr-[6.75rem] lg:mr-[5.625rem]" />
         <Nav isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
         <Backdrop isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
       </div>
