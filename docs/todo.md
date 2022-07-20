@@ -1,0 +1,1 @@
+- wziać poprawkę na svg, które są pozycjonowane absolutnie

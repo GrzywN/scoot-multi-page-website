@@ -20,5 +20,7 @@ module.exports = {
   rules: {
     "react/react-in-jsx-scope": "off",
     "import/no-extraneous-dependencies": "off",
+    "react/self-closing-comp": "off",
+    "react/jsx-props-no-spreading": "off",
   },
 };

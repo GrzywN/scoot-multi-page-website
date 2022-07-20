@@ -12,16 +12,20 @@ function Navbar() {
     <header
       className="
       relative grid h-16 w-full place-items-center bg-white 
-      sm:h-24"
+      md:h-24"
     >
       <div
         className="
         flex w-full max-w-[69.125rem] items-center justify-center
-        sm:justify-start sm:pb-[1.3125rem] sm:pl-[2.4375rem] sm:pr-10 sm:pt-[1.375rem]
-        md:ml-1"
+        md:justify-start md:pb-[1.3125rem] md:pl-[2.4375rem] md:pr-10 md:pt-[1.375rem]
+        xl:ml-1 xl:p-0"
       >
         <Hamburger isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
-        <Logo className="sm:mr-[3.625rem]" />
+        <Logo
+          className="
+          md:mr-[6.75rem]
+          lg:mr-[5.625rem]"
+        />
         <Nav isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
         <Backdrop isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
       </div>

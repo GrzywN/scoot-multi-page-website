@@ -8,7 +8,7 @@ function Hamburger({ isMenuOpen, onClick }) {
       type="button"
       className="
       absolute left-8 top-1/2 z-50 -translate-y-1/2 
-      sm:hidden"
+      md:hidden"
       onClick={onClick}
     >
       <img

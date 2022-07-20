@@ -47,8 +47,16 @@ module.exports = {
       body: ["Lexend Deca", "sans-serif"],
       "nav-list": ["Space Mono", "monospace"],
       button: ["Space Mono", "monospace"],
+      monospace: ["Space Mono", "monospace"],
+      "sans-serif": ["Lexend Deca", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "home-hero-mobile": "url(./src/assets/images/home-hero-mobile.jpg)",
+        "home-hero-tablet": "url(./src/assets/images/home-hero-tablet.jpg)",
+        "home-hero-desktop": "url(./src/assets/images/home-hero-desktop.jpg)",
+      },
+    },
   },
   plugins: [],
 };

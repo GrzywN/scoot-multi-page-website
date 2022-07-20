@@ -3,13 +3,15 @@ import logo from "../../../assets/logo.svg";
 
 function Logo({ className }) {
   return (
-    <img
-      className={`h-5 w-[4.7188rem] ${className}`}
-      src={logo}
-      alt="scoot"
-      width="75.5"
-      height="20"
-    />
+    <a href="/">
+      <img
+        className={`${className} 
+        h-5 w-[4.7188rem] transition-transform duration-500 ease-in-out hover:scale-105
+        md:h-[1.75rem] md:w-[6.6875rem]`}
+        src={logo}
+        alt="scoot"
+      />
+    </a>
   );
 }
 
