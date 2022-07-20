@@ -18,7 +18,7 @@ function Navbar() {
         className="
         flex w-full max-w-[69.125rem] items-center justify-center
         md:justify-start md:pb-[1.3125rem] md:pl-[2.4375rem] md:pr-10 md:pt-[1.375rem]
-        lg:ml-1 lg:p-0"
+        xl:ml-1 xl:p-0"
       >
         <Hamburger isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
         <Logo className="md:mr-[5.625rem]" />

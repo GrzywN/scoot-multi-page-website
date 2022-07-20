@@ -3,8 +3,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-*,
+/* *,
 *::before,
 *::after {
   outline: 1px dashed indigo;
-}
+} */
