@@ -1,1 +1,2 @@
-- wziać poprawkę na svg, które są pozycjonowane absolutnie
+- animacje svg z framer motion
+- import react

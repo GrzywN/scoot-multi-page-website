@@ -1,3 +1,4 @@
+import React from "react";
 import CTA from "../../../../common/components/CTA";
 import rightArrow from "../../../../assets/patterns/right-arrow.svg";
 import whiteCircles from "../../../../assets/patterns/white-circles.svg";
