@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import hamburgerIcon from "../../../assets/icons/hamburger.svg";
 import closeIcon from "../../../assets/icons/close.svg";

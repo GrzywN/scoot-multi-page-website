@@ -1,3 +1,4 @@
+import React from "react";
 import CTA from "./CTA";
 
 function CTAContainer(props) {
