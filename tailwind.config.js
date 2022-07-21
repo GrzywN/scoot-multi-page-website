@@ -32,6 +32,14 @@ module.exports = {
         "1.5rem",
         { lineHeight: "1.75rem", letterSpacing: "-1.07px", fontWeight: "bold" },
       ],
+      "card-title": [
+        "1.25rem",
+        {
+          lineHeight: "1.75rem",
+          letterSpacing: "-0.0556rem",
+          fontWeight: "bold",
+        },
+      ],
       "nav-list": [
         "1.125rem",
         { lineHeight: "1.5625rem", letterSpacing: "0", fontWeight: "bold" },
