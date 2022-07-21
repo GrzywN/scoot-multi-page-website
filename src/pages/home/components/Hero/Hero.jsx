@@ -61,8 +61,8 @@ function Hero() {
         </motion.div>
         <RightArrow
           className="
-          absolute bottom-[2.1563rem] left-[-15rem]
-          md:left-[-7.9375rem]
+          absolute bottom-[1.75rem] left-[-19.5rem]
+          md:left-[-7.9375rem] md:bottom-[2.1563rem]
           xl:left-[44.0625rem] xl:bottom-[9.5rem]"
           pathVariants={rightArrowPathVariants}
         />

@@ -20,7 +20,7 @@ function Card({ icon, title, description }) {
       <h3
         className="
         font-monospace text-card-title text-dark-navy
-        md:mb-[1.6875rem]
+        md:mb-[1.6875rem] md:text-h4
         xl:mb-[1.6875rem]"
       >
         {title}

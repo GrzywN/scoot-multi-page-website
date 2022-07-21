@@ -14,8 +14,8 @@ function Stepper() {
       <div
         className="
         mt-[7.5rem] grid justify-center gap-12 px-8
-        md:max-w-[90rem] md:gap-10 md:px-0
-        xl:relative xl:flex xl:gap-[1.875rem]"
+        md:mt-[7.625rem] md:max-w-[90rem] md:gap-10 md:px-0
+        xl:relative xl:mt-40 xl:flex xl:gap-[1.875rem]"
       >
         <Card
           icon={locateIcon}
@@ -25,14 +25,14 @@ function Stepper() {
           too far away."
         />
         <Card
-          icon={rideIcon}
+          icon={scooterIcon}
           title="Pick your scooter"
           description="We show the most important info for the scooters closest to you. So
           you know how much charge they have left and can see roughly how much
           it will cost."
         />
         <Card
-          icon={scooterIcon}
+          icon={rideIcon}
           title="Enjoy the ride"
           description="Scan the QR code and the bike will unlock. Retract the cable lock, put
           on a helmet, and you’re off! Always lock bikes away from walkways and
