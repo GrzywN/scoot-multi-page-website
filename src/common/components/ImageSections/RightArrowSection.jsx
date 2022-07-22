@@ -1,5 +1,5 @@
 import React from "react";
-import CTA from "/src/common/components/CTA/CTA";
+import SectionCard from "./SectionCard";
 import LeftDownwardArrow from "/src/common/components/Patterns/LeftDownwardArrow";
 import telemetryImage from "/src/assets/images/telemetry.jpg";
 import circle from "/src/assets/patterns/circle.svg";
@@ -39,33 +39,13 @@ function RightArrowSection() {
           src={circle}
           alt=""
         />
-        <div
-          className="
-          flex flex-col items-center gap-8
-          md:gap-10
-          xl:mt-[4.125rem] xl:items-start xl:gap-0"
-        >
-          <h3
-            className="
-            text-center font-monospace text-32 font-bold text-dark-navy
-            md:max-w-[28.5625rem] md:text-48
-            xl:mb-6 xl:text-left"
-          >
-            Easy to use riding telemetry
-          </h3>
-          <p
-            className="
-            text-center font-sans-serif text-15 text-dim-grey
-            md:max-w-[35.8125rem]
-            xl:mb-10 xl:max-w-[27.8125rem] xl:text-left"
-          >
-            The Scoot app is available with riding telemetry. This means it can
-            show you your average speed, how long you&apos;ve been using the
-            scooter, your traveling distance, and many more things all in an
-            easy to use app.
-          </p>
-          <CTA className="max-w-[11.25rem]" href="/about" text="Learn More" />
-        </div>
+        <SectionCard
+          title="Easy to use riding telemetry"
+          description="The Scoot app is available with riding telemetry. This means it can show
+          you your average speed, how long you've been using the scooter,
+          your traveling distance, and many more things all in an easy to use app."
+          href="/about"
+        />
       </div>
     </div>
   );
