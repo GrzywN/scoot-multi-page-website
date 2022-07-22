@@ -1,7 +1,7 @@
 import React from "react";
-import LeftDownwardArrow from "/src/common/components/Patterns/LeftDownwardArrow.jsx";
-import telemetryImage from "../../../assets/images/telemetry.jpg";
-import CTA from "../CTA/CTA";
+import CTA from "/src/common/components/CTA/CTA";
+import LeftDownwardArrow from "/src/common/components/Patterns/LeftDownwardArrow";
+import telemetryImage from "/src/assets/images/telemetry.jpg";
 import circle from "/src/assets/patterns/circle.svg";
 
 function RightArrowSection() {
