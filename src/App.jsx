@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./common/components/Navbar";
 import Hero from "./pages/home/components/Hero";
 import Stepper from "./pages/home/components/Stepper";
-import { RightArrowSection } from "./common/components/ImageSections";
+import SectionContainer from "./pages/home/containers/SectionContainer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       >
         <Hero />
         <Stepper />
-        <RightArrowSection />
+        <SectionContainer />
       </main>
     </>
   );
