@@ -19,15 +19,15 @@ function Card({ icon, title, description }) {
       />
       <h3
         className="
-        font-monospace text-card-title text-dark-navy
-        md:mb-[1.6875rem] md:text-h4
+        font-monospace text-20 font-bold text-dark-navy
+        md:mb-[1.6875rem] md:text-24
         xl:mb-[1.6875rem]"
       >
         {title}
       </h3>
       <p
         className="
-        text-center font-sans-serif text-body text-dim-grey
+        text-center font-sans-serif text-15 text-dim-grey
         md:text-left"
       >
         {description}

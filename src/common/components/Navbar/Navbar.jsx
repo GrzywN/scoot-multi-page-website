@@ -5,14 +5,14 @@ import Nav from "./Nav";
 import Backdrop from "./Backdrop";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const switchIsMenuOpen = () => setIsMenuOpen((prevState) => !prevState);
+  const [isVisible, setIsVisible] = useState(false);
+  const switchIsVisible = () => setIsVisible((prevState) => !prevState);
 
   return (
     <header
       className="
-      relative grid h-16 w-full place-items-center bg-white 
-      md:h-24"
+      fixed top-0 z-50 grid h-16 w-full place-items-center bg-white
+      md:static md:h-24"
     >
       <div
         className="
@@ -20,14 +20,14 @@ function Navbar() {
         md:justify-start md:pb-[1.3125rem] md:pl-[2.4375rem] md:pr-10 md:pt-[1.375rem]
         xl:ml-1 xl:p-0"
       >
-        <Hamburger isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
+        <Hamburger isVisible={isVisible} onClick={switchIsVisible} />
         <Logo
           className="
           md:mr-[6.75rem]
           lg:mr-[5.625rem]"
         />
-        <Nav isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
-        <Backdrop isMenuOpen={isMenuOpen} onClick={switchIsMenuOpen} />
+        <Nav isVisible={isVisible} onClick={switchIsVisible} />
+        <Backdrop isVisible={isVisible} onClick={switchIsVisible} />
       </div>
     </header>
   );

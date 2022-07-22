@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import hamburgerIcon from "../../../assets/icons/hamburger.svg";
 import closeIcon from "../../../assets/icons/close.svg";
 
-function Hamburger({ isMenuOpen, onClick }) {
+function Hamburger({ isVisible, onClick }) {
   return (
     <button
       type="button"
@@ -14,7 +14,7 @@ function Hamburger({ isMenuOpen, onClick }) {
     >
       <img
         className=""
-        src={isMenuOpen ? closeIcon : hamburgerIcon}
+        src={isVisible ? closeIcon : hamburgerIcon}
         alt="Menu"
       />
     </button>
@@ -22,7 +22,7 @@ function Hamburger({ isMenuOpen, onClick }) {
 }
 
 Hamburger.propTypes = {
-  isMenuOpen: PropTypes.bool.isRequired,
+  isVisible: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 

@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Backdrop({ isMenuOpen, onClick }) {
+function Backdrop({ isVisible, onClick }) {
   return (
     <div
-      className={`${isMenuOpen ? "opacity-1" : "pointer-events-none opacity-0"} 
+      className={`${isVisible ? "opacity-1" : "pointer-events-none opacity-0"} 
       fixed inset-0 top-16 z-10 cursor-auto bg-black/75 backdrop-blur-md transition-opacity duration-500 ease-in-out
       md:hidden`}
       onClick={onClick}
@@ -17,7 +17,7 @@ function Backdrop({ isMenuOpen, onClick }) {
 }
 
 Backdrop.propTypes = {
-  isMenuOpen: PropTypes.bool.isRequired,
+  isVisible: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 

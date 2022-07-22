@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import CTA from "../CTA";
 
-function Nav({ isMenuOpen }) {
+function Nav({ isVisible }) {
   return (
     <nav
       className={`${
-        isMenuOpen ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
+        isVisible ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
       } 
       fixed top-16 bottom-0 left-0 z-50 flex w-full max-w-[16rem] origin-top-left flex-col 
         justify-between bg-dark-navy px-8 pb-6 pt-16 transition duration-500 ease-in-out 
@@ -14,8 +14,8 @@ function Nav({ isMenuOpen }) {
     >
       <ul
         className="
-        grid gap-6 font-nav-list text-nav-list text-light-grey
-        md:flex md:gap-8 md:text-body md:text-dim-grey"
+        grid gap-6 font-monospace text-18 font-bold text-light-grey
+        md:flex md:gap-8 md:text-15 md:text-dim-grey"
       >
         <li>
           <a href="/about">About</a>
@@ -27,13 +27,13 @@ function Nav({ isMenuOpen }) {
           <a href="/careers">Careers</a>
         </li>
       </ul>
-      <CTA />
+      <CTA href="#download" text="Get Scootin" />
     </nav>
   );
 }
 
 Nav.propTypes = {
-  isMenuOpen: PropTypes.bool.isRequired,
+  isVisible: PropTypes.bool.isRequired,
 };
 
 export default Nav;

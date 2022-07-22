@@ -1,11 +1,11 @@
 import React from "react";
+import CTA from "/src/common/components/CTA";
 import { motion } from "framer-motion";
 import {
   Line,
   WhiteCircles,
   RightArrow,
 } from "/src/common/components/Patterns";
-import CTA from "/src/common/components/CTA";
 import {
   createPathVariants,
   createOpacityVariants,
@@ -41,15 +41,15 @@ function Hero() {
         >
           <h1
             className="
-            mb-6 max-w-[23.4375rem] text-center font-monospace text-h3 leading-none text-white
-            md:max-w-[35.8125rem] md:text-h1
+            mb-6 max-w-[23.4375rem] text-center font-monospace text-40 font-bold leading-none text-white
+            md:max-w-[35.8125rem] md:text-56
             xl:mb-10 xl:text-left"
           >
             Scooter sharing made simple
           </h1>
           <p
             className="
-            mb-[2.125rem] text-center font-sans-serif text-body text-white
+            mb-[2.125rem] text-center font-sans-serif text-15 text-white
             md:mb-8 md:max-w-[35.8125rem]
             xl:mb-10 xl:max-w-[25.3125rem] xl:translate-x-[5.9375rem] xl:text-left 2xl:translate-x-0"
           >
@@ -57,7 +57,12 @@ function Hero() {
             in convenient locations in each of our cities. Use our app to locate
             the nearest bike, unlock it with a tap, and you’re away!
           </p>
-          <CTA className="max-w-[11.25rem] xl:translate-x-[5.9375rem] 2xl:translate-x-0" />
+          <CTA
+            className="
+            max-w-[11.25rem] xl:translate-x-[5.9375rem] 2xl:translate-x-0"
+            href="#download"
+            text="Get Scootin"
+          />
         </motion.div>
         <RightArrow
           className="

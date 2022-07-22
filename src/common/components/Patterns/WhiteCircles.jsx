@@ -6,7 +6,9 @@ import {
   pathVariantsShape,
 } from "/src/common/utils/animations";
 
-function WhiteCircles({ className = "", svgVariants, pathVariants }) {
+function WhiteCircles(props) {
+  const { className, svgVariants, pathVariants } = props;
+
   return (
     <motion.svg
       initial="initial"
