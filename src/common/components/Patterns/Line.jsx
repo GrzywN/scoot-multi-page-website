@@ -6,7 +6,9 @@ import {
   pathVariantsShape,
 } from "/src/common/utils/animations";
 
-function Line({ className = "", svgVariants, pathVariants }) {
+function Line(props) {
+  const { className, svgVariants, pathVariants } = props;
+
   return (
     <motion.svg
       initial="initial"

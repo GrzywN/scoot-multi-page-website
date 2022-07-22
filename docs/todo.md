@@ -1,4 +1,0 @@
-- animacje svg z framer motion
-- import react
-- odstep i przekazywanie classname przez props do komponentow
-- zmienic typografie zeby bylo tylko sans i monospace
