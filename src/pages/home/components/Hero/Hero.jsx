@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   Line,
   WhiteCircles,
-  RightArrow,
+  RightDownwardArrow,
 } from "/src/common/components/Patterns";
 import {
   createPathVariants,
@@ -64,7 +64,7 @@ function Hero() {
             text="Get Scootin"
           />
         </motion.div>
-        <RightArrow
+        <RightDownwardArrow
           className="
           absolute bottom-[1.75rem] left-[-19.5rem]
           md:left-[-7.9375rem] md:bottom-[2.1563rem]

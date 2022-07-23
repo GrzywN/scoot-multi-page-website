@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CTA from "../CTA";
+import CTA from "/src/common/components/CTA/";
 
 function Nav({ isVisible }) {
   return (

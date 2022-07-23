@@ -1,5 +1,17 @@
+import Circle from "./Circle";
+import LeftDownwardArrow from "./LeftDownwardArrow";
+import LeftUpwardArrow from "./LeftUpwardArrow";
 import Line from "./Line";
+import RightDownwardArrow from "./RightDownwardArrow";
+import SemiCircles from "./SemiCircles";
 import WhiteCircles from "./WhiteCircles";
-import RightArrow from "./RightArrow";
 
-export { Line, WhiteCircles, RightArrow };
+export {
+  Circle,
+  LeftDownwardArrow,
+  LeftUpwardArrow,
+  Line,
+  RightDownwardArrow,
+  SemiCircles,
+  WhiteCircles,
+};

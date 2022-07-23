@@ -6,7 +6,7 @@ import {
   pathVariantsShape,
 } from "/src/common/utils/animations";
 
-function RightArrow(props) {
+function LeftUpwardArrow(props) {
   const { className, svgVariants, pathVariants } = props;
 
   return (
@@ -16,7 +16,7 @@ function RightArrow(props) {
       variants={svgVariants}
       className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width="452"
+      width="741"
       height="151"
     >
       <g
@@ -28,24 +28,27 @@ function RightArrow(props) {
       >
         <motion.path
           variants={pathVariants}
-          d="M407.952 145.444l38.426-38.426-38.426-38.426"
+          d="M740.969 143.368H182.854V43.999H6.591"
         />
-        <motion.path variants={pathVariants} d="M0 8h270.115v99.369h176.263" />
+        <motion.path
+          variants={pathVariants}
+          d="M44.64 82.64L6.214 44.214 44.64 5.787"
+        />
       </g>
     </motion.svg>
   );
 }
 
-RightArrow.propTypes = {
+LeftUpwardArrow.propTypes = {
   className: PropTypes.string,
   svgVariants: opacityVariantsShape,
   pathVariants: pathVariantsShape,
 };
 
-RightArrow.defaultProps = {
+LeftUpwardArrow.defaultProps = {
   className: "",
   svgVariants: {},
   pathVariants: {},
 };
 
-export default RightArrow;
+export default LeftUpwardArrow;
