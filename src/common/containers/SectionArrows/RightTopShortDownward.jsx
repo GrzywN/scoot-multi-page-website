@@ -1,7 +1,7 @@
 import React from "react";
 import { RightDownwardArrow } from "/src/common/components/Patterns";
 
-function TopShortRightDownwardArrow() {
+function RightTopShortDownward() {
   return (
     <>
       <RightDownwardArrow
@@ -20,4 +20,4 @@ function TopShortRightDownwardArrow() {
   );
 }
 
-export default TopShortRightDownwardArrow;
+export default RightTopShortDownward;

@@ -3,15 +3,16 @@ import Section from "/src/common/components/Section/";
 import imageTelemetry from "/src/assets/images/telemetry.jpg";
 import imageNearYou from "/src/assets/images/near-you.jpg";
 import imagePayments from "/src/assets/images/payments.jpg";
-
-import BottomLongLeftDownwardArrow from "/src/common/containers/SectionDecorations/BottomLongLeftDownwardArrow";
-import TopShortRightDownwardArrow from "/src/common/containers/SectionDecorations/TopShortRightDownwardArrow";
-import TopShortLeftDownwardArrow from "/src/common/containers/SectionDecorations/TopShortLeftDownwardArrow";
+import {
+  LeftBottomLongDownward,
+  LeftTopShortDownward,
+  RightTopShortDownward,
+} from "/src/common/containers/SectionArrows";
 
 const LEFT = "LEFT";
 const RIGHT = "RIGHT";
 
-function SectionsContainer() {
+function HomeSections() {
   return (
     <div
       className="
@@ -27,7 +28,7 @@ function SectionsContainer() {
         description="The Scoot app is available with riding telemetry. This means it can show you your 
         average speed, how long you've been using the scooter, your traveling distance, 
         and many more things all in an easy to use app."
-        decoration={<BottomLongLeftDownwardArrow />}
+        decoration={<LeftBottomLongDownward />}
       />
       <Section
         className="md:mt-2 xl:mt-0"
@@ -38,7 +39,7 @@ function SectionsContainer() {
         description="Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure 
         to let us know if you want to see us in your hometown. We’re aiming to let our 
         scooters loose on 23 cities over the coming year."
-        decoration={<TopShortRightDownwardArrow />}
+        decoration={<RightTopShortDownward />}
       />
       <Section
         imageHref={imagePayments}
@@ -48,10 +49,10 @@ function SectionsContainer() {
         description="Our payment is as easy as one two three. We accept most credit cards and debit cards. 
         You can also link your PayPal account inside the app. Need to pay later? No worries! 
         You can defer payment for up to a month."
-        decoration={<TopShortLeftDownwardArrow />}
+        decoration={<LeftTopShortDownward />}
       />
     </div>
   );
 }
 
-export default SectionsContainer;
+export default HomeSections;
