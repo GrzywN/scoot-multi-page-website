@@ -6,6 +6,7 @@ import imagePayments from "/src/assets/images/payments.jpg";
 
 import BottomLongLeftDownwardArrow from "/src/common/containers/SectionDecorations/BottomLongLeftDownwardArrow";
 import TopShortRightDownwardArrow from "/src/common/containers/SectionDecorations/TopShortRightDownwardArrow";
+import TopShortLeftDownwardArrow from "/src/common/containers/SectionDecorations/TopShortLeftDownwardArrow";
 
 const LEFT = "LEFT";
 const RIGHT = "RIGHT";
@@ -14,7 +15,7 @@ function SectionsContainer() {
   return (
     <div
       className="
-      mt-[7.5rem] grid gap-[7.5rem]
+      mt-[7.5rem] grid gap-[7.5rem] overflow-hidden
       md:mt-[9.0625rem] md:gap-[7.5rem]
       xl:mt-[12.5rem] xl:gap-40"
     >
@@ -47,6 +48,7 @@ function SectionsContainer() {
         description="Our payment is as easy as one two three. We accept most credit cards and debit cards. 
         You can also link your PayPal account inside the app. Need to pay later? No worries! 
         You can defer payment for up to a month."
+        decoration={<TopShortLeftDownwardArrow />}
       />
     </div>
   );
