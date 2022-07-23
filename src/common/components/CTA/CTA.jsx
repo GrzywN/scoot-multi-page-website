@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-function CTA({ className, href, text }) {
+function CTA({ className, to, text }) {
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       className={`
       ${className}
       grid h-[3.3125rem] w-full place-items-center border-[0.1875rem] border-yellow bg-yellow font-monospace text-15 
@@ -12,13 +13,13 @@ function CTA({ className, href, text }) {
       md:max-w-[11.25rem]`}
     >
       {text}
-    </a>
+    </Link>
   );
 }
 
 CTA.propTypes = {
   className: PropTypes.string,
-  href: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 

@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import logo from "/src/assets/logo.svg";
+import { Link } from "react-router-dom";
 
 function Logo({ className }) {
   return (
-    <a href="/">
+    <Link to="/">
       <img
         className={`${className} 
         h-5 w-[4.7188rem] transition-transform duration-500 ease-in-out hover:scale-105
@@ -12,7 +13,7 @@ function Logo({ className }) {
         src={logo}
         alt="scoot"
       />
-    </a>
+    </Link>
   );
 }
 

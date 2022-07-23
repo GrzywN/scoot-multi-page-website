@@ -1,1 +1,2 @@
 - Usunąć na końcu wszystkie patterny z assetsów
+- Dodać active state w postaci podkreślenia dla hoverów na navbarze

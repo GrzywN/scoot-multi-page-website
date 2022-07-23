@@ -1,8 +1,10 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./common/components/Navbar";
-import Hero from "./pages/home/components/Hero";
-import Stepper from "./pages/home/components/Stepper";
-import HomeSections from "./pages/home/components/HomeSections";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Careers from "./routes/Careers";
+import Locations from "./routes/Locations";
 
 function App() {
   return (
@@ -13,9 +15,12 @@ function App() {
         mt-16 overflow-x-hidden
         md:mt-0"
       >
-        <Hero />
-        <Stepper />
-        <HomeSections />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/locations" element={<Locations />} />
+        </Routes>
       </main>
     </>
   );
