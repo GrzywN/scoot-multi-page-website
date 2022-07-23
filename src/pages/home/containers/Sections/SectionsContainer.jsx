@@ -5,6 +5,7 @@ import imageNearYou from "/src/assets/images/near-you.jpg";
 import imagePayments from "/src/assets/images/payments.jpg";
 
 import BottomLongLeftDownwardArrow from "/src/common/containers/SectionDecorations/BottomLongLeftDownwardArrow";
+import TopShortRightDownwardArrow from "/src/common/containers/SectionDecorations/TopShortRightDownwardArrow";
 
 const LEFT = "LEFT";
 const RIGHT = "RIGHT";
@@ -36,6 +37,7 @@ function SectionsContainer() {
         description="Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure 
         to let us know if you want to see us in your hometown. We’re aiming to let our 
         scooters loose on 23 cities over the coming year."
+        decoration={<TopShortRightDownwardArrow />}
       />
       <Section
         imageHref={imagePayments}
