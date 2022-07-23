@@ -60,7 +60,7 @@ function Hero() {
           <CTA
             className="
             max-w-[11.25rem] xl:translate-x-[5.9375rem] 2xl:translate-x-0"
-            href="#download"
+            to="#download"
             text="Get Scootin"
           />
         </motion.div>

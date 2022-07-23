@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import CTA from "/src/common/components/CTA";
 
-function SectionCard({ title, description, href }) {
+function SectionCard({ title, description, to }) {
   return (
     <div
       className="
@@ -29,7 +29,7 @@ function SectionCard({ title, description, href }) {
       <CTA
         className="
         max-w-[11.25rem]"
-        href={href}
+        to={to}
         text="Learn More"
       />
     </div>
@@ -37,7 +37,7 @@ function SectionCard({ title, description, href }) {
 }
 
 SectionCard.propTypes = {
-  href: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

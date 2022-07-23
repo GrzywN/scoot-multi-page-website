@@ -29,6 +29,7 @@ function HomeSections() {
         average speed, how long you've been using the scooter, your traveling distance, 
         and many more things all in an easy to use app."
         decoration={<LeftBottomLongDownward />}
+        to="/about"
       />
       <Section
         className="md:mt-2 xl:mt-0"
@@ -40,6 +41,7 @@ function HomeSections() {
         to let us know if you want to see us in your hometown. We’re aiming to let our 
         scooters loose on 23 cities over the coming year."
         decoration={<RightTopShortDownward />}
+        to="/locations"
       />
       <Section
         imageHref={imagePayments}
@@ -50,6 +52,7 @@ function HomeSections() {
         You can also link your PayPal account inside the app. Need to pay later? No worries! 
         You can defer payment for up to a month."
         decoration={<LeftTopShortDownward />}
+        to="/about"
       />
     </div>
   );

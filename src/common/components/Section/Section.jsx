@@ -16,6 +16,7 @@ function Section(props) {
     hasLargerGap,
     className = "",
     decoration,
+    to,
   } = props;
 
   if (arrowTo === LEFT) {
@@ -48,7 +49,7 @@ function Section(props) {
           src={imageHref}
           alt=""
         />
-        <SectionCard title={title} description={description} href="/about" />
+        <SectionCard title={title} description={description} to={to} />
         <img
           className={`${
             arrowToRight
@@ -72,6 +73,7 @@ Section.propTypes = {
   hasLargerGap: PropTypes.bool.isRequired,
   className: PropTypes.string,
   decoration: PropTypes.element,
+  to: PropTypes.string.isRequired,
 };
 
 Section.defaultProps = {

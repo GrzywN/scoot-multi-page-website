@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CTA from "/src/common/components/CTA/";
+import { Link } from "react-router-dom";
 
 function Nav({ isVisible }) {
   return (
@@ -18,16 +19,16 @@ function Nav({ isVisible }) {
         md:flex md:gap-8 md:text-15 md:text-dim-grey"
       >
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/location">Location</a>
+          <Link to="/locations">Location</Link>
         </li>
         <li>
-          <a href="/careers">Careers</a>
+          <Link to="/careers">Careers</Link>
         </li>
       </ul>
-      <CTA href="#download" text="Get Scootin" />
+      <CTA to="#download" text="Get Scootin" />
     </nav>
   );
 }
