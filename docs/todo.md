@@ -1,0 +1,1 @@
+- Usunąć na końcu wszystkie patterny z assetsów

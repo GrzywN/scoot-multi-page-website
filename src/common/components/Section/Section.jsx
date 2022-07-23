@@ -7,14 +7,17 @@ const LEFT = "LEFT";
 const RIGHT = "RIGHT";
 let arrowToRight;
 
-function Section({
-  imageHref,
-  arrowTo,
-  title,
-  description,
-  hasLargerGap,
-  className = "",
-}) {
+function Section(props) {
+  const {
+    imageHref,
+    arrowTo,
+    title,
+    description,
+    hasLargerGap,
+    className = "",
+    decoration,
+  } = props;
+
   if (arrowTo === LEFT) {
     arrowToRight = false;
   } else if (arrowTo === RIGHT) {
@@ -29,7 +32,7 @@ function Section({
 
   return (
     <section className={`${className} w-full`}>
-      <figure
+      <div
         className={`
         ${arrowToRight ? "xl:flex-row" : "xl:flex-row-reverse"}
         relative mx-auto flex flex-col px-8
@@ -55,7 +58,8 @@ function Section({
           src={circle}
           alt=""
         />
-      </figure>
+        {decoration}
+      </div>
     </section>
   );
 }
@@ -67,10 +71,12 @@ Section.propTypes = {
   description: PropTypes.string.isRequired,
   hasLargerGap: PropTypes.bool.isRequired,
   className: PropTypes.string,
+  decoration: PropTypes.element,
 };
 
 Section.defaultProps = {
   className: "",
+  decoration: null,
 };
 
 export default Section;

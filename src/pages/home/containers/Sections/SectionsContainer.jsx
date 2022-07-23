@@ -4,10 +4,12 @@ import imageTelemetry from "/src/assets/images/telemetry.jpg";
 import imageNearYou from "/src/assets/images/near-you.jpg";
 import imagePayments from "/src/assets/images/payments.jpg";
 
+import BottomLongLeftDownwardArrow from "/src/common/containers/SectionDecorations/BottomLongLeftDownwardArrow";
+
 const LEFT = "LEFT";
 const RIGHT = "RIGHT";
 
-function SectionContainer() {
+function SectionsContainer() {
   return (
     <div
       className="
@@ -23,6 +25,7 @@ function SectionContainer() {
         description="The Scoot app is available with riding telemetry. This means it can show you your 
         average speed, how long you've been using the scooter, your traveling distance, 
         and many more things all in an easy to use app."
+        decoration={<BottomLongLeftDownwardArrow />}
       />
       <Section
         className="md:mt-2 xl:mt-0"
@@ -47,4 +50,4 @@ function SectionContainer() {
   );
 }
 
-export default SectionContainer;
+export default SectionsContainer;

@@ -4,7 +4,7 @@ import CTA from "/src/common/components/CTA";
 
 function SectionCard({ title, description, href }) {
   return (
-    <figcaption
+    <div
       className="
       flex flex-col items-center gap-8
       md:gap-10
@@ -32,7 +32,7 @@ function SectionCard({ title, description, href }) {
         href={href}
         text="Learn More"
       />
-    </figcaption>
+    </div>
   );
 }
 
