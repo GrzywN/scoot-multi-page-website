@@ -1,20 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import DownloadButton from "./DownloadButton";
 import AppStoreIcon from "/src/assets/icons/app-store.svg";
 import GooglePlayIcon from "/src/assets/icons/google-play.svg";
 
 function Download({ className }) {
   return (
-    <section
-      className="
-      w-full bg-dark-navy 
-      xl:max-w-[90rem]"
-    >
+    <section className="w-full bg-dark-navy">
       <div
         className={`${className} 
         mx-auto flex h-80 flex-col items-center justify-center gap-10 bg-semi-circles bg-[position:bottom_right_-10.625rem] bg-no-repeat px-8 
         md:h-[18.75rem] md:bg-[position:bottom_right_-10rem] md:px-0
-        xl:flex-row xl:justify-between xl:bg-[position:bottom_right_-10.1875rem] xl:px-[10.3125rem]`}
+        xl:max-w-[90rem] xl:flex-row xl:justify-between xl:bg-[position:bottom_right_-10.1875rem] xl:px-[10.3125rem]`}
       >
         <h3
           className="
@@ -29,22 +26,16 @@ function Download({ className }) {
           flex flex-wrap justify-center gap-3
           xl:gap-[1.125rem]"
         >
-          <a className="" href="https://www.apple.com/en/app-store/">
-            <img
-              className="h-10 w-auto xl:h-14"
-              src={AppStoreIcon}
-              alt="Available on the AppStore"
-              target="_blank"
-            />
-          </a>
-          <a className="" href="https://play.google.com/store/apps">
-            <img
-              className="h-10 w-auto xl:h-14"
-              src={GooglePlayIcon}
-              alt="Get it on GooglePlay"
-              target="_blank"
-            />
-          </a>
+          <DownloadButton
+            src={AppStoreIcon}
+            alt="Available on the AppStore"
+            href="https://www.apple.com/en/app-store/"
+          />
+          <DownloadButton
+            src={GooglePlayIcon}
+            alt="Get it on Google Play"
+            href="https://play.google.com/store/apps"
+          />
         </div>
       </div>
     </section>
