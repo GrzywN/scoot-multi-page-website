@@ -34,6 +34,15 @@ module.exports = {
         "home-hero-tablet": "url(/src/assets/images/home-hero-tablet.jpg)",
         "home-hero-desktop": "url(/src/assets/images/home-hero-desktop.jpg)",
         "semi-circles": "url(src/assets/patterns/semi-circles.svg)",
+        "about-hero-mobile": "url(/src/assets/images/about-hero-mobile.jpg)",
+        "about-hero-tablet": "url(/src/assets/images/about-hero-tablet.jpg)",
+        "about-hero-desktop": "url(/src/assets/images/about-hero-desktop.jpg)",
+        "careers-location-hero-mobile":
+          "url(src/assets/images/careers-locations-hero-mobile.jpg)",
+        "careers-location-hero-tablet":
+          "url(src/assets/images/careers-locations-hero-tablet.jpg)",
+        "careers-location-hero-desktop":
+          "url(src/assets/images/careers-locations-hero-desktop.jpg)",
       },
     },
   },
