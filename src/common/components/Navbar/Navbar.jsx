@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Hamburger from "./Hamburger";
-import Logo from "./Logo";
+import { NavLogo } from "/src/common/components/Logo";
 import Nav from "./Nav";
 import Backdrop from "./Backdrop";
 
@@ -21,7 +21,7 @@ function Navbar() {
         xl:ml-1 xl:p-0"
       >
         <Hamburger isVisible={isVisible} onClick={switchIsVisible} />
-        <Logo
+        <NavLogo
           className="
           md:mr-[6.75rem]
           lg:mr-[5.625rem]"

@@ -23,3 +23,5 @@ DownloadButton.propTypes = {
 DownloadButton.defaultProps = {
   alt: "",
 };
+
+export default DownloadButton;

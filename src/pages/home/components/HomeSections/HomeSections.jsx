@@ -16,9 +16,9 @@ function HomeSections() {
   return (
     <div
       className="
-      mt-[7.5rem] grid gap-[7.5rem] overflow-hidden
-      md:mt-[9.0625rem] md:gap-[7.5rem]
-      xl:mt-[12.5rem] xl:gap-40"
+      my-[7.5rem] grid gap-[7.5rem] overflow-hidden
+      md:mt-[9.0625rem] md:mb-[6.5rem]
+      md:gap-[7.5rem] xl:my-[12.5rem] xl:gap-40"
     >
       <Section
         imageHref={imageTelemetry}

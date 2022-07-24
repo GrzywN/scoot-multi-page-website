@@ -5,6 +5,8 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Careers from "./routes/Careers";
 import Locations from "./routes/Locations";
+import Download from "/src/common/components/Download";
+import Footer from "/src/common/components/Footer";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/locations" element={<Locations />} />
         </Routes>
       </main>
+      <Download />
+      <Footer />
     </>
   );
 }

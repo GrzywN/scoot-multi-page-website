@@ -6,7 +6,7 @@ import GooglePlayIcon from "/src/assets/icons/google-play.svg";
 
 function Download({ className }) {
   return (
-    <section className="w-full bg-dark-navy">
+    <section id="download" className="w-full bg-dark-navy">
       <div
         className={`${className} 
         mx-auto flex h-80 flex-col items-center justify-center gap-10 bg-semi-circles bg-[position:bottom_right_-10.625rem] bg-no-repeat px-8 
