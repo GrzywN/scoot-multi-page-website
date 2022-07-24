@@ -8,8 +8,8 @@ function Logo({ className }) {
     <Link to="/">
       <img
         className={`${className} 
-        h-5 w-[4.7188rem] transition-transform duration-500 ease-in-out hover:scale-105
-        md:h-[1.75rem] md:w-[6.6875rem]`}
+        transition-transform duration-500 ease-in-out will-change-transform hover:scale-105
+        `}
         src={logo}
         alt="scoot"
       />
