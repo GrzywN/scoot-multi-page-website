@@ -9,7 +9,7 @@ import {
 import {
   createPathVariants,
   createOpacityVariants,
-} from "/src/common/utils/animations";
+} from "/src/common/utils/animationsVariantsFactory";
 
 const extraLinePathVariants = createPathVariants({ rotate180: false });
 const linePathVariants = createPathVariants({ rotate180: true });

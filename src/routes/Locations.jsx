@@ -1,5 +1,5 @@
 import React from "react";
-import SmallHero from "../common/components/SmallHero/SmallHero";
+import SmallHero from "../common/components/SmallHero";
 
 function Locations() {
   return (

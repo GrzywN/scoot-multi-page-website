@@ -1,5 +1,5 @@
 import React from "react";
-import SmallHero from "../common/components/SmallHero/SmallHero";
+import SmallHero from "../common/components/SmallHero";
 import AboutSections from "/src/pages/about/AboutSections";
 
 function About() {

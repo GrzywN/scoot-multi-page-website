@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import logo from "/src/assets/logo.svg";
 import { Link } from "react-router-dom";
+
+import logo from "/src/assets/logo.svg";
 
 function Logo({ className }) {
   return (

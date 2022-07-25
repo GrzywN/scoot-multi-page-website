@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import hamburgerIcon from "/src/assets/icons/hamburger.svg";
-import closeIcon from "/src/assets/icons/close.svg";
+
+import iconHamburger from "/src/assets/icons/hamburger.svg";
+import iconClose from "/src/assets/icons/close.svg";
 
 function Hamburger({ isVisible, onClick }) {
   return (
@@ -14,7 +15,7 @@ function Hamburger({ isVisible, onClick }) {
     >
       <img
         className=""
-        src={isVisible ? closeIcon : hamburgerIcon}
+        src={isVisible ? iconClose : iconHamburger}
         alt="Menu"
       />
     </button>

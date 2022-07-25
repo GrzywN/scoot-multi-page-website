@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import CTA from "/src/common/components/CTA";
 
-function SectionCard({ className, title, description, to }) {
+function SectionCard(props) {
+  const { className, title, description, to } = props;
+
   return (
     <div
       className={`${className}

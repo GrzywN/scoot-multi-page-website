@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 import {
   opacityVariantsShape,
   pathVariantsShape,
-} from "/src/common/utils/animations";
+} from "/src/common/utils/animationsPropTypes";
 
-function SemiCircles(props) {
-  const { className, svgVariants, pathVariants } = props;
-
+function SemiCircles({ className, svgVariants, pathVariants }) {
   return (
     <motion.svg
       initial="initial"

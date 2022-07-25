@@ -3,9 +3,9 @@ import { FooterLogo } from "/src/common/components/Logo";
 import LinkItem from "./LinkItem";
 import SocialIcon from "./SocialIcon";
 
-import facebookIcon from "/src/assets/icons/facebook.svg";
-import twitterIcon from "/src/assets/icons/twitter.svg";
-import instagramIcon from "/src/assets/icons/instagram.svg";
+import iconFacebook from "/src/assets/icons/facebook.svg";
+import iconTwitter from "/src/assets/icons/twitter.svg";
+import iconInstagram from "/src/assets/icons/instagram.svg";
 
 function Footer() {
   return (
@@ -41,17 +41,17 @@ function Footer() {
         >
           <SocialIcon
             href="https://www.facebook.com/"
-            src={facebookIcon}
+            src={iconFacebook}
             alt="Our facebook"
           />
           <SocialIcon
             href="https://twitter.com/"
-            src={twitterIcon}
+            src={iconTwitter}
             alt="Our Twitter"
           />
           <SocialIcon
             href="https://www.instagram.com/"
-            src={instagramIcon}
+            src={iconInstagram}
             alt="Our Instagram"
           />
         </ul>

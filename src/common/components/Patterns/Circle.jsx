@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 import {
   opacityVariantsShape,
   pathVariantsShape,
-} from "/src/common/utils/animations";
+} from "/src/common/utils/animationsPropTypes";
 
-function Circle(props) {
-  const { className, svgVariants, pathVariants } = props;
-
+function Circle({ className, svgVariants, pathVariants }) {
   return (
     <motion.svg
       initial="initial"

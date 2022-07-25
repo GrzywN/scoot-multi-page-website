@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import circle from "/src/assets/patterns/circle.svg";
 import SectionCard from "/src/common/components/Section/SectionCard.jsx";
 
-const LEFT = "LEFT";
+import circle from "/src/assets/patterns/circle.svg";
+
 const RIGHT = "RIGHT";
-let arrowToRight;
 
 function Section(props) {
   const {
@@ -19,23 +18,11 @@ function Section(props) {
     ctaTo = "",
   } = props;
 
-  if (arrowTo === LEFT) {
-    arrowToRight = false;
-  } else if (arrowTo === RIGHT) {
-    arrowToRight = true;
-  }
-
-  if (arrowTo === LEFT) {
-    arrowToRight = false;
-  } else if (arrowTo === RIGHT) {
-    arrowToRight = true;
-  }
-
   return (
     <section className={`${className} w-full`}>
       <div
         className={`
-        ${arrowToRight ? "xl:flex-row" : "xl:flex-row-reverse"}
+        ${arrowTo === RIGHT ? "xl:flex-row" : "xl:flex-row-reverse"}
         relative mx-auto flex flex-col px-8
         md:max-w-[27.8125rem] md:px-0
         xl:max-w-[69.375rem] xl:items-center xl:justify-between`}
@@ -57,7 +44,7 @@ function Section(props) {
         />
         <img
           className={`${
-            arrowToRight
+            arrowTo === RIGHT
               ? "left-0 translate-x-[calc(-100%-4rem)]"
               : "right-0 translate-x-[calc(100%+4rem)]"
           } absolute`}
