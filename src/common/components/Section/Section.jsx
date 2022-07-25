@@ -13,10 +13,10 @@ function Section(props) {
     arrowTo,
     title,
     description,
-    hasLargerGap,
+    hasLargerGap = false,
     className = "",
     decoration,
-    to,
+    ctaTo = "",
   } = props;
 
   if (arrowTo === LEFT) {
@@ -49,7 +49,12 @@ function Section(props) {
           src={imageHref}
           alt=""
         />
-        <SectionCard title={title} description={description} to={to} />
+        <SectionCard
+          className={!ctaTo && "xl:mt-[2.5rem]"}
+          title={title}
+          description={description}
+          to={ctaTo}
+        />
         <img
           className={`${
             arrowToRight
@@ -66,19 +71,21 @@ function Section(props) {
 }
 
 Section.propTypes = {
+  className: PropTypes.string,
   imageHref: PropTypes.string.isRequired,
   arrowTo: PropTypes.string.isRequired,
+  ctaTo: PropTypes.string,
+  decoration: PropTypes.element,
+  hasLargerGap: PropTypes.bool,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  hasLargerGap: PropTypes.bool.isRequired,
-  className: PropTypes.string,
-  decoration: PropTypes.element,
-  to: PropTypes.string.isRequired,
 };
 
 Section.defaultProps = {
   className: "",
+  ctaTo: "",
   decoration: null,
+  hasLargerGap: false,
 };
 
 export default Section;

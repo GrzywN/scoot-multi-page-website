@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import CTA from "/src/common/components/CTA";
 
-function SectionCard({ title, description, to }) {
+function SectionCard({ className, title, description, to }) {
   return (
     <div
-      className="
+      className={`${className}
       flex flex-col items-center gap-8
       md:gap-10
-      xl:items-start xl:gap-0"
+      xl:items-start xl:gap-0`}
     >
       <h3
         className="
@@ -26,20 +26,28 @@ function SectionCard({ title, description, to }) {
       >
         {description}
       </p>
-      <CTA
-        className="
-        max-w-[11.25rem]"
-        to={to}
-        text="Learn More"
-      />
+      {to && (
+        <CTA
+          className="
+          max-w-[11.25rem]"
+          to={to}
+          text="Learn More"
+        />
+      )}
     </div>
   );
 }
 
 SectionCard.propTypes = {
-  to: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  to: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+};
+
+SectionCard.defaultProps = {
+  className: "",
+  to: null,
 };
 
 export default SectionCard;

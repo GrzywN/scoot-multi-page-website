@@ -14,7 +14,7 @@ function SmallHero({ className, title }) {
       >
         <h1
           className="
-          text-40 font-bold capitalize text-white
+          font-monospace text-40 font-bold capitalize text-white
           md:text-56"
         >
           {title}
