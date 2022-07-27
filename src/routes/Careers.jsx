@@ -1,7 +1,16 @@
 import React from "react";
+import SmallHero from "../common/components/SmallHero";
 
 function Careers() {
-  return <div>Careers page</div>;
+  return (
+    <SmallHero
+      className="
+      bg-careers-location-hero-mobile
+      md:bg-careers-location-hero-tablet
+      xl:bg-careers-location-hero-desktop"
+      title="Careers"
+    />
+  );
 }
 
 export default Careers;
