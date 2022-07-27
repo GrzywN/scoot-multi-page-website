@@ -19,7 +19,7 @@ function AboutSections() {
   return (
     <div
       className="
-      mt-[4.5rem] mb-[7.5rem] grid gap-[7.5rem] overflow-hidden
+      mt-[4.5rem] mb-[9.0625rem] grid gap-[7.5rem] overflow-hidden
       md:mt-[9rem] md:mb-[7.5rem]
       xl:my-[7.5rem]"
     >
