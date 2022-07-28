@@ -37,7 +37,7 @@ function Section(props) {
           alt=""
         />
         <SectionCard
-          className={!ctaTo && "xl:mt-[2.5rem]"}
+          className={!ctaTo ? "xl:mt-[2.5rem]" : ""}
           title={title}
           description={description}
           to={ctaTo}
