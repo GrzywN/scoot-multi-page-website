@@ -4,3 +4,5 @@
 
 - SocialItem component + animacje
 - Liste też do komponentu
+- Zmienic tla na shorthero
+- Zrobić, aby po nawigacji stan się zmieniał
