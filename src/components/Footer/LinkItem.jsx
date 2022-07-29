@@ -6,7 +6,7 @@ function LinkItem({ className, to, children }) {
   return (
     <Link
       className={`${className} 
-      transition-colors duration-500 ease-in-out hover:text-white focus-visible:text-white`}
+      transition-colors duration-500 ease-in-out hover:text-yellow focus-visible:text-yellow`}
       to={to}
     >
       {children}

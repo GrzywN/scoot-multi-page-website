@@ -17,14 +17,14 @@ function StepperCard({ icon, title, description }) {
         src={icon}
         alt=""
       />
-      <h3
+      <h2
         className="
         font-monospace text-20 font-bold text-dark-navy
         md:mb-[1.6875rem] md:text-24
         xl:mb-[1.6875rem]"
       >
         {title}
-      </h3>
+      </h2>
       <p
         className="
         text-center font-sans-serif text-15 text-dim-grey

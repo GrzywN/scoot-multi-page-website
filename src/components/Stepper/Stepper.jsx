@@ -1,11 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import StepperCard from "./StepperCard";
 
-import iconLocate from "../../assets/icons/locate.svg";
-import iconRide from "../../assets/icons/ride.svg";
-import iconScooter from "../../assets/icons/scooter.svg";
-
-function Stepper() {
+function Stepper({ cardsIcons, cardsTitles, cardsDescriptions }) {
   return (
     <div
       className="
@@ -18,27 +15,14 @@ function Stepper() {
         md:mt-[7.625rem] md:max-w-[90rem] md:gap-10 md:px-0
         xl:relative xl:mt-40 xl:flex xl:gap-[1.875rem]"
       >
-        <StepperCard
-          icon={iconLocate}
-          title="Locate with app"
-          description="Use the app to find the nearest scooter to you. We are continuously
-          placing scooters in the areas with most demand, so one should never be
-          too far away."
-        />
-        <StepperCard
-          icon={iconRide}
-          title="Pick your scooter"
-          description="We show the most important info for the scooters closest to you. So
-          you know how much charge they have left and can see roughly how much
-          it will cost."
-        />
-        <StepperCard
-          icon={iconScooter}
-          title="Enjoy the ride"
-          description="Scan the QR code and the bike will unlock. Retract the cable lock, put
-          on a helmet, and you’re off! Always lock bikes away from walkways and
-          accessibility ramps."
-        />
+        {cardsIcons.map((icon, index) => (
+          <StepperCard
+            key={icon}
+            icon={icon}
+            title={cardsTitles[index]}
+            description={cardsDescriptions[index]}
+          />
+        ))}
         <div
           className="
           absolute -z-10 hidden bg-light-grey
@@ -54,5 +38,11 @@ function Stepper() {
     </div>
   );
 }
+
+Stepper.propTypes = {
+  cardsIcons: PropTypes.arrayOf(PropTypes.string).isRequired,
+  cardsTitles: PropTypes.arrayOf(PropTypes.string).isRequired,
+  cardsDescriptions: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Stepper;

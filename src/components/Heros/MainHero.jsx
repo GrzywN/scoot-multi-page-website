@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import CTA from "../CTA";
 import { Line, WhiteCircles, RightDownwardArrow } from "../Patterns";
@@ -13,7 +14,7 @@ const sectionOpacityVariants = createOpacityVariants({ order: 1 });
 const rightArrowPathVariants = createPathVariants({ order: 2 });
 const whiteCirclesPathVariants = createPathVariants({ order: 3 });
 
-function MainHero() {
+function MainHero({ title, description, ctaText }) {
   return (
     <motion.div
       initial="initial"
@@ -41,7 +42,7 @@ function MainHero() {
             md:max-w-[35.8125rem] md:text-56
             xl:mb-10 xl:text-left"
           >
-            Scooter sharing made simple
+            {title}
           </h1>
           <p
             className="
@@ -49,15 +50,13 @@ function MainHero() {
             md:mb-8 md:max-w-[35.8125rem]
             xl:mb-10 xl:max-w-[25.3125rem] xl:translate-x-[5.9375rem] xl:text-left 2xl:translate-x-0"
           >
-            Scoot takes the hassle out of urban mobility. Our bikes are placed
-            in convenient locations in each of our cities. Use our app to locate
-            the nearest bike, unlock it with a tap, and you’re away!
+            {description}
           </p>
           <CTA
             className="
             max-w-[11.25rem] xl:translate-x-[5.9375rem] 2xl:translate-x-0"
             to="#download"
-            text="Get Scootin"
+            text={ctaText}
           />
         </motion.div>
         <RightDownwardArrow
@@ -92,5 +91,11 @@ function MainHero() {
     </motion.div>
   );
 }
+
+MainHero.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  ctaText: PropTypes.string.isRequired,
+};
 
 export default MainHero;

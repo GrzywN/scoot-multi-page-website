@@ -8,6 +8,9 @@ import {
   RightTopShortDownward,
 } from "../components/StyledSectionArrows";
 
+import iconLocate from "../assets/icons/locate.svg";
+import iconRide from "../assets/icons/ride.svg";
+import iconScooter from "../assets/icons/scooter.svg";
 import imageTelemetry from "../assets/images/telemetry.jpg";
 import imageNearYou from "../assets/images/near-you.jpg";
 import imagePayments from "../assets/images/payments.jpg";
@@ -17,8 +20,27 @@ import { LEFT, RIGHT } from "../utils/constants";
 function Home() {
   return (
     <>
-      <MainHero />
-      <Stepper />
+      <MainHero 
+        title="Scooter sharing made simple"
+        description="Scoot takes the hassle out of urban mobility. Our bikes are placed
+        in convenient locations in each of our cities. Use our app to locate
+        the nearest bike, unlock it with a tap, and you’re away!"
+        ctaText="Get Scootin"
+      />
+      <Stepper 
+        cardsIcons={[iconLocate, iconRide, iconScooter]} 
+        cardsTitles={["Locate with app", "Pick your scooter", "Enjoy the ride"]}
+        cardsDescriptions={[
+        `Use the app to find the nearest scooter to you. We are continuously
+        placing scooters in the areas with most demand, so one should never be
+        too far away.`,
+        `We show the most important info for the scooters closest to you. So
+        you know how much charge they have left and can see roughly how much
+        it will cost.`,
+        `Scan the QR code and the bike will unlock. Retract the cable lock, put
+        on a helmet, and you’re off! Always lock bikes away from walkways and
+        accessibility ramps.`]}
+      />
       <div
         className="
         my-[7.5rem] grid gap-[7.5rem] overflow-hidden
