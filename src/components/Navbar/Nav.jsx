@@ -12,7 +12,7 @@ function Nav({ isVisible, onClick }) {
   const linkClasses = `
     relative duration-500 ease-in-out
     md:before:absolute md:before:bottom-0 md:before:h-1 md:before:w-full md:before:translate-y-3
-      md:before:scale-x-0 md:before:bg-yellow 
+      md:before:scale-x-0 md:before:bg-yellow md:before:rounded-full
         md:before:transition-transform md:before:content-[''] md:hover:before:scale-x-100 md:focus-within:before:scale-x-100`;
 
   return (
