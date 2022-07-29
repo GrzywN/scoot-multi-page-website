@@ -10,8 +10,7 @@ import {
   RightTopShortDownward,
 } from "../SectionArrows";
 
-const LEFT = "LEFT";
-const RIGHT = "RIGHT";
+import { LEFT, RIGHT } from "../../utils/constants";
 
 function HomeSections() {
   return (

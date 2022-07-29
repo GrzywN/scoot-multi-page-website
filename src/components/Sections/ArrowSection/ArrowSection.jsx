@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionCard from "./ArrowSectionCard";
+import { LEFT, RIGHT } from "../../../utils/constants";
 
-import circle from "../../../assets/patterns/circle.svg";
-
-const RIGHT = "RIGHT";
+import { Circle } from "../../Patterns";
 
 function ArrowSection(props) {
   const {
@@ -44,14 +43,12 @@ function ArrowSection(props) {
           ctaText={ctaText}
           to={ctaTo}
         />
-        <img
+        <Circle
           className={`${
             arrowTo === RIGHT
               ? "left-0 translate-x-[calc(-100%-4rem)]"
               : "right-0 translate-x-[calc(100%+4rem)]"
           } absolute`}
-          src={circle}
-          alt=""
         />
         {decoration}
       </div>
@@ -62,7 +59,7 @@ function ArrowSection(props) {
 ArrowSection.propTypes = {
   className: PropTypes.string,
   imageHref: PropTypes.string.isRequired,
-  arrowTo: PropTypes.string.isRequired,
+  arrowTo: PropTypes.oneOf([LEFT, RIGHT]).isRequired,
   ctaText: PropTypes.string,
   ctaTo: PropTypes.string,
   decoration: PropTypes.element,

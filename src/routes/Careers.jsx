@@ -12,7 +12,7 @@ import imageOurTech from "../assets/images/our-tech.jpg";
 import imageOurIntegrity from "../assets/images/our-integrity.jpg";
 import imageOurCommunity from "../assets/images/our-community.jpg";
 
-const LEFT = "LEFT";
+import { LEFT } from "../utils/constants";
 
 function Careers() {
   return (
