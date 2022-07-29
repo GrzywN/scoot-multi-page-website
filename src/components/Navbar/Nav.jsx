@@ -9,6 +9,12 @@ function Nav({ isVisible, onClick }) {
     "scale-x-0 opacity-0",
   ];
 
+  const linkClasses = `
+    relative duration-500 ease-in-out
+    md:before:absolute md:before:bottom-0 md:before:h-1 md:before:w-full md:before:translate-y-3
+      md:before:scale-x-0 md:before:bg-yellow 
+        md:before:transition-transform md:before:content-[''] md:hover:before:scale-x-100 md:focus-within:before:scale-x-100`;
+
   return (
     <nav
       className={`${isVisible ? navVisibleClasses : navNotVisibleClasses} 
@@ -21,17 +27,17 @@ function Nav({ isVisible, onClick }) {
         grid gap-6 font-monospace text-18 font-bold text-light-grey
         md:flex md:gap-8 md:text-15 md:text-dim-grey"
       >
-        <li>
+        <li className={linkClasses}>
           <Link onClick={onClick} to="/about">
             About
           </Link>
         </li>
-        <li>
+        <li className={linkClasses}>
           <Link onClick={onClick} to="/locations">
             Location
           </Link>
         </li>
-        <li>
+        <li className={linkClasses}>
           <Link onClick={onClick} to="/careers">
             Careers
           </Link>
