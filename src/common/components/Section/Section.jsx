@@ -15,6 +15,7 @@ function Section(props) {
     hasLargerGap = false,
     className = "",
     decoration,
+    ctaText = "Learn More",
     ctaTo = "",
   } = props;
 
@@ -40,6 +41,7 @@ function Section(props) {
           className={!ctaTo ? "xl:mt-[2.5rem]" : ""}
           title={title}
           description={description}
+          ctaText={ctaText}
           to={ctaTo}
         />
         <img
@@ -61,6 +63,7 @@ Section.propTypes = {
   className: PropTypes.string,
   imageHref: PropTypes.string.isRequired,
   arrowTo: PropTypes.string.isRequired,
+  ctaText: PropTypes.string,
   ctaTo: PropTypes.string,
   decoration: PropTypes.element,
   hasLargerGap: PropTypes.bool,
@@ -70,6 +73,7 @@ Section.propTypes = {
 
 Section.defaultProps = {
   className: "",
+  ctaText: "Learn More",
   ctaTo: "",
   decoration: null,
   hasLargerGap: false,

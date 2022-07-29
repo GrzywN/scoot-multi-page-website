@@ -6,3 +6,4 @@
 - Liste też do komponentu
 - Zmienic tla na shorthero
 - Zrobić, aby po nawigacji stan się zmieniał
+- Zmienic cta na careers

@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import EnumerationCard from "./EnumerationCard";
 
 function EnumerationSection(props) {
-  const { title, cardImages, cardTitles, cardDescriptions } = props;
+  const { className, title, cardImages, cardTitles, cardDescriptions } = props;
 
   return (
-    <section className="flex w-full justify-center">
+    <section className={`${className} flex w-full justify-center`}>
       <div
         className="
         max-w-[28.5625rem] px-8
@@ -42,10 +42,15 @@ function EnumerationSection(props) {
 }
 
 EnumerationSection.propTypes = {
+  className: PropTypes.string,
   title: PropTypes.string.isRequired,
   cardImages: PropTypes.arrayOf(PropTypes.string).isRequired,
   cardTitles: PropTypes.arrayOf(PropTypes.string).isRequired,
   cardDescriptions: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+EnumerationSection.defaultProps = {
+  className: "",
 };
 
 export default EnumerationSection;

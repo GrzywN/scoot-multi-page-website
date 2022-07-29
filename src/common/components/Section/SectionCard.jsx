@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import CTA from "/src/common/components/CTA";
 
 function SectionCard(props) {
-  const { className, title, description, to } = props;
+  const { className, title, description, ctaText, to } = props;
 
   return (
     <div
@@ -33,7 +33,7 @@ function SectionCard(props) {
           className="
           max-w-[11.25rem]"
           to={to}
-          text="Learn More"
+          text={ctaText}
         />
       )}
     </div>
@@ -45,6 +45,7 @@ SectionCard.propTypes = {
   to: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  ctaText: PropTypes.string.isRequired,
 };
 
 SectionCard.defaultProps = {
