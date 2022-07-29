@@ -1,8 +1,10 @@
 import React from "react";
 import SmallHero from "../components/Heros/LowHero";
-import ArrowSection from "../components/ArrowSection";
-import EnumerationSection from "../components/EnumerationSection";
-import CareersCard from "../components/CareersSection";
+import {
+  ArrowSection,
+  EnumerationSection,
+  CareersSection,
+} from "../components/Sections";
 import { LeftBottomLongDownward } from "../containers/SectionArrows";
 
 import imageJoinUs from "../assets/images/join-us.jpg";
@@ -50,7 +52,7 @@ function Careers() {
           "We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.",
         ]}
       />
-      <CareersCard
+      <CareersSection
         className="
         mt-[9.0625rem] mb-[7.5rem] 
         md:mt-[7.5rem] 

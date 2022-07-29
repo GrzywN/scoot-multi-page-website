@@ -1,7 +1,7 @@
 import React from "react";
 import SmallHero from "../components/Heros/LowHero";
 import AboutSections from "../containers/AboutSections";
-import FaqsSection from "../components/FaqsSection";
+import { FaqsSection } from "../components/Sections";
 
 const faqsData = [
   {

@@ -5,7 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Careers from "./routes/Careers";
 import Locations from "./routes/Locations";
-import DownloadCtaSection from "./components/DownloadCtaSection";
+import { DownloadCtaSection } from "./components/Sections";
 import Footer from "./components/Footer";
 
 function App() {

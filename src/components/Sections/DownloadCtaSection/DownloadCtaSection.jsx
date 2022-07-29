@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import DownloadCta from "./DownloadCta";
-import AppStoreIcon from "../../assets/icons/app-store-2.svg";
-import GooglePlayIcon from "../../assets/icons/google-play-2.svg";
+import AppStoreIcon from "../../../assets/icons/app-store-2.svg";
+import GooglePlayIcon from "../../../assets/icons/google-play-2.svg";
 
 function Download({ className }) {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CTA from "../CTA";
+import CTA from "../../CTA";
 
 function CareersCard({ job, location, ctaTo }) {
   return (

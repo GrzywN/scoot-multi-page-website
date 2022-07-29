@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SectionCard from "./ArrowSectionCard";
 
-import circle from "../../assets/patterns/circle.svg";
+import circle from "../../../assets/patterns/circle.svg";
 
 const RIGHT = "RIGHT";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowSection from "../../components/ArrowSection";
+import { ArrowSection } from "../../components/Sections";
 
 import imageTelemetry from "../../assets/images/telemetry.jpg";
 import imageNearYou from "../../assets/images/near-you.jpg";

@@ -1,7 +1,6 @@
 import React from "react";
-import ArrowSection from "../../components/ArrowSection";
+import { ArrowSection, EnumerationSection } from "../../components/Sections";
 import { LeftBottomLongUpward, RightTopLongDownward } from "../SectionArrows";
-import EnumerationSection from "../../components/EnumerationSection";
 
 import imageDigitalEra from "../../assets/images/digital-era.jpg";
 import imageBetterLiving from "../../assets/images/better-living.jpg";
