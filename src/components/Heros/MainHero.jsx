@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import CTA from "../../CTA";
-import { Line, WhiteCircles, RightDownwardArrow } from "../../Patterns";
+import CTA from "../CTA";
+import { Line, WhiteCircles, RightDownwardArrow } from "../Patterns";
 import {
   createPathVariants,
   createOpacityVariants,
-} from "../../../utils/animationsVariantsFactory";
+} from "../../utils/animationsVariantsFactory";
 
 const extraLinePathVariants = createPathVariants({ rotate180: false });
 const linePathVariants = createPathVariants({ rotate180: true });

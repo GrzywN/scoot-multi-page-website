@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { WhiteCircles } from "../../Patterns";
+import { WhiteCircles } from "../Patterns";
 
 function LowHero({ className, title }) {
   return (
