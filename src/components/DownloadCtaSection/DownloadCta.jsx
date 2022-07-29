@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function DownloadButton({ href, alt = "", src }) {
+function DownloadCta({ href, alt = "", src }) {
   return (
     <a className="" href={href}>
       <img
@@ -14,14 +14,14 @@ function DownloadButton({ href, alt = "", src }) {
   );
 }
 
-DownloadButton.propTypes = {
+DownloadCta.propTypes = {
   href: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
 };
 
-DownloadButton.defaultProps = {
+DownloadCta.defaultProps = {
   alt: "",
 };
 
-export default DownloadButton;
+export default DownloadCta;

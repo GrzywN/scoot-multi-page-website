@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import DownloadButton from "./DownloadButton";
+import DownloadCta from "./DownloadCta";
 import AppStoreIcon from "../../assets/icons/app-store-2.svg";
 import GooglePlayIcon from "../../assets/icons/google-play-2.svg";
 
@@ -26,12 +26,12 @@ function Download({ className }) {
           flex flex-wrap justify-center gap-3
           xl:gap-[1.125rem]"
         >
-          <DownloadButton
+          <DownloadCta
             src={AppStoreIcon}
             alt="Available on the AppStore"
             href="https://www.apple.com/en/app-store/"
           />
-          <DownloadButton
+          <DownloadCta
             src={GooglePlayIcon}
             alt="Get it on Google Play"
             href="https://play.google.com/store/apps"

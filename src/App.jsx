@@ -5,7 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Careers from "./routes/Careers";
 import Locations from "./routes/Locations";
-import Download from "./components/Download";
+import DownloadCtaSection from "./components/DownloadCtaSection";
 import Footer from "./components/Footer";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
           <Route path="/locations" element={<Locations />} />
         </Routes>
       </main>
-      <Download />
+      <DownloadCtaSection />
       <Footer />
     </>
   );
