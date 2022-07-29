@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { WhiteCircles } from "../Patterns";
+import { WhiteCircles } from "../../Patterns";
 
-function SmallHero({ className, title }) {
+function LowHero({ className, title }) {
   return (
     <div className={`${className} w-full bg-cover bg-center`}>
       <div
@@ -25,9 +25,9 @@ function SmallHero({ className, title }) {
   );
 }
 
-SmallHero.propTypes = {
+LowHero.propTypes = {
   className: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
-export default SmallHero;
+export default LowHero;

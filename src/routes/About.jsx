@@ -1,5 +1,5 @@
 import React from "react";
-import SmallHero from "../components/SmallHero";
+import SmallHero from "../components/Heros/LowHero";
 import AboutSections from "../containers/AboutSections";
 import Faqs from "../components/Faqs";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import SmallHero from "../components/SmallHero";
+import SmallHero from "../components/Heros/LowHero";
 import Section from "../components/Section";
 import EnumerationSection from "../components/EnumerationSection";
 import CareersCard from "../components/CareersSection";
