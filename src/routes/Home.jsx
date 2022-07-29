@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "/src/pages/home/components/Hero";
-import Stepper from "/src/pages/home/components/Stepper";
-import HomeSections from "/src/pages/home/components/HomeSections";
+import Hero from "../components/Hero";
+import Stepper from "../components/Stepper";
+import HomeSections from "../containers/HomeSections";
 
 function Home() {
   return (

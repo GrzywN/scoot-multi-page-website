@@ -5,27 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png" />
     <title>Frontend Mentor | Scoot</title>
-    <style>
-      .resize-animation-stopper * {
-        animation: none !important;
-        transition: none !important;
-      }
-    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
-    <script>
-      let resizeTimer;
-      const stopAnimations = () => {
-        document.body.classList.add('resize-animation-stopper');
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          document.body.classList.remove('resize-animation-stopper');
-        }, 500);
-      };
-      stopAnimations();
-      window.addEventListener('resize', stopAnimations);
-    </script>
   </body>
 </html>

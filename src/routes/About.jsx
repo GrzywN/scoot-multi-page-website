@@ -1,7 +1,7 @@
 import React from "react";
-import SmallHero from "../common/components/SmallHero";
-import AboutSections from "/src/pages/about/AboutSections";
-import FAQs from "/src/common/components/FAQs";
+import SmallHero from "../components/SmallHero";
+import AboutSections from "../containers/AboutSections";
+import Faqs from "../components/Faqs";
 
 const faqsData = [
   {
@@ -67,7 +67,7 @@ function About() {
         title="About"
       />
       <AboutSections />
-      <FAQs className="mb-[7.5rem] xl:mb-40" faqsData={faqsData} />
+      <Faqs className="mb-[7.5rem] xl:mb-40" faqsData={faqsData} />
     </>
   );
 }

@@ -3,6 +3,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 /* *,
 *::before,
 *::after {

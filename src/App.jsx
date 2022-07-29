@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./common/components/Navbar";
+import Navbar from "./components/Navbar";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Careers from "./routes/Careers";
 import Locations from "./routes/Locations";
-import Download from "/src/common/components/Download";
-import Footer from "/src/common/components/Footer";
+import Download from "./components/Download";
+import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    let resizeTimer;
+    const stopAnimations = () => {
+      document.body.classList.add("resize-animation-stopper");
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 500);
+    };
+    stopAnimations();
+    window.addEventListener("resize", stopAnimations);
+  }, []);
+
   return (
     <>
       <Navbar />

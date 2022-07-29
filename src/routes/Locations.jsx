@@ -1,7 +1,7 @@
 import React from "react";
-import SmallHero from "../common/components/SmallHero";
-import WorldMap from "/src/pages/locations/WorldMap";
-import CtaSection from "/src/common/components/CtaSection";
+import SmallHero from "../components/SmallHero";
+import WorldMap from "../components/WorldMap";
+import CtaSection from "../components/CtaSection";
 
 function Locations() {
   return (

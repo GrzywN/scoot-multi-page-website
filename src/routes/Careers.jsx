@@ -1,14 +1,14 @@
 import React from "react";
-import SmallHero from "../common/components/SmallHero";
-import Section from "/src/common/components/Section";
-import { LeftBottomLongDownward } from "/src/common/containers/SectionArrows/";
-import EnumerationSection from "/src/common/components/EnumerationSection";
-import CareersCard from "/src/common/components/CareersSection";
+import SmallHero from "../components/SmallHero";
+import Section from "../components/Section";
+import EnumerationSection from "../components/EnumerationSection";
+import CareersCard from "../components/CareersSection";
+import { LeftBottomLongDownward } from "../containers/SectionArrows";
 
-import imageJoinUs from "/src/assets/images/join-us.jpg";
-import imageOurTech from "/src/assets/images/our-tech.jpg";
-import imageOurIntegrity from "/src/assets/images/our-integrity.jpg";
-import imageOurCommunity from "/src/assets/images/our-community.jpg";
+import imageJoinUs from "../assets/images/join-us.jpg";
+import imageOurTech from "../assets/images/our-tech.jpg";
+import imageOurIntegrity from "../assets/images/our-integrity.jpg";
+import imageOurCommunity from "../assets/images/our-community.jpg";
 
 const LEFT = "LEFT";
 
