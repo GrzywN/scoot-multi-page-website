@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Accordion from "../../Accordion";
 
-function FaqsSection({ faqsData, className }) {
+function FaqsSection({ className, contents, sectionTitle }) {
   return (
     <div
       className={`${className} 
@@ -15,9 +15,9 @@ function FaqsSection({ faqsData, className }) {
         text-center font-monospace text-32 font-bold text-dark-navy
         md:text-48"
       >
-        FAQs
+        {sectionTitle}
       </h2>
-      {faqsData.map((item) => {
+      {contents.map((item) => {
         const { title, content } = item;
 
         return (
@@ -45,7 +45,9 @@ function FaqsSection({ faqsData, className }) {
 }
 
 FaqsSection.propTypes = {
-  faqsData: PropTypes.arrayOf(
+  className: PropTypes.string,
+  sectionTitle: PropTypes.string.isRequired,
+  contents: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       content: PropTypes.arrayOf(
@@ -56,7 +58,6 @@ FaqsSection.propTypes = {
       ).isRequired,
     })
   ).isRequired,
-  className: PropTypes.string,
 };
 
 FaqsSection.defaultProps = {
