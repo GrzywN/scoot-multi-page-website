@@ -1,5 +1,5 @@
 import React from "react";
-import SmallHero from "../components/Heros/LowHero";
+import { LowHero } from "../components/Heros";
 import {
   ArrowSection,
   EnumerationSection,
@@ -17,7 +17,7 @@ import { LEFT } from "../utils/constants";
 function Careers() {
   return (
     <>
-      <SmallHero
+      <LowHero
         className="
         bg-careers-location-hero-mobile
         md:bg-careers-location-hero-tablet

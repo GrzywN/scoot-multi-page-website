@@ -1,12 +1,12 @@
 import React from "react";
-import SmallHero from "../components/Heros/LowHero";
+import { LowHero } from "../components/Heros";
 import WorldMap from "../components/WorldMap";
 import { CtaSection } from "../components/Sections";
 
 function Locations() {
   return (
     <>
-      <SmallHero
+      <LowHero
         className="
         bg-careers-location-hero-mobile
         md:bg-careers-location-hero-tablet

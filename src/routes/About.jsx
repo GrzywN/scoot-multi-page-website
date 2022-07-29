@@ -1,5 +1,5 @@
 import React from "react";
-import SmallHero from "../components/Heros/LowHero";
+import { LowHero } from "../components/Heros";
 import {
   ArrowSection,
   EnumerationSection,
@@ -20,7 +20,7 @@ import imageOurCommunity from "../assets/images/our-community.jpg";
 function About() {
   return (
     <>
-      <SmallHero
+      <LowHero
         className="
         bg-about-hero-mobile
         md:bg-about-hero-tablet

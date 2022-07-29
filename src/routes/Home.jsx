@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Heros/MainHero";
+import { MainHero } from "../components/Heros";
 import Stepper from "../components/Stepper";
 import { ArrowSection } from "../components/Sections";
 
@@ -17,7 +17,7 @@ import { LEFT, RIGHT } from "../utils/constants";
 function Home() {
   return (
     <>
-      <Hero />
+      <MainHero />
       <Stepper />
       <div
         className="
