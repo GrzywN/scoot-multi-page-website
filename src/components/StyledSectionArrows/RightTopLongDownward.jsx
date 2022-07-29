@@ -1,12 +1,12 @@
 import React from "react";
-import { RightDownwardArrow } from "../../components/Patterns";
+import { RightDownwardArrow } from "../Patterns";
 
-function RightTopShortDownward() {
+function RightTopLongDownward() {
   return (
     <>
       <RightDownwardArrow
         className="
-        absolute top-0 left-0 translate-x-[-11.5625rem] translate-y-[-0.5rem]
+        absolute top-0 left-0 translate-x-[-6.5625rem] translate-y-[-0.5rem]
         md:translate-x-[-16.25rem] md:translate-y-0
         "
       />
@@ -20,4 +20,4 @@ function RightTopShortDownward() {
   );
 }
 
-export default RightTopShortDownward;
+export default RightTopLongDownward;

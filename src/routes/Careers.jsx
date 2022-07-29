@@ -5,7 +5,7 @@ import {
   EnumerationSection,
   CareersSection,
 } from "../components/Sections";
-import { LeftBottomLongDownward } from "../containers/SectionArrows";
+import { LeftBottomLongDownward } from "../components/StyledSectionArrows";
 
 import imageJoinUs from "../assets/images/join-us.jpg";
 import imageOurTech from "../assets/images/our-tech.jpg";

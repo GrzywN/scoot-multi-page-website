@@ -1,5 +1,5 @@
 import React from "react";
-import { LeftUpwardArrow } from "../../components/Patterns";
+import { LeftUpwardArrow } from "../Patterns";
 
 function LeftBottomLongUpward() {
   return (

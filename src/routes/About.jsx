@@ -8,7 +8,7 @@ import {
 import {
   LeftBottomLongUpward,
   RightTopLongDownward,
-} from "../containers/SectionArrows";
+} from "../components/StyledSectionArrows";
 import { LEFT, RIGHT } from "../utils/constants";
 
 import imageDigitalEra from "../assets/images/digital-era.jpg";

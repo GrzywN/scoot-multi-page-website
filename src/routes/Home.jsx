@@ -10,7 +10,7 @@ import {
   LeftBottomLongDownward,
   LeftTopShortDownward,
   RightTopShortDownward,
-} from "../containers/SectionArrows";
+} from "../components/StyledSectionArrows";
 
 import { LEFT, RIGHT } from "../utils/constants";
 
