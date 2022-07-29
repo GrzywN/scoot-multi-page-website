@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 
 function LinkItem({ className, to, children }) {
   return (
-    <Link className={className} to={to}>
+    <Link
+      className={`${className} 
+      transition-colors duration-500 ease-in-out hover:text-white focus-visible:text-white`}
+      to={to}
+    >
       {children}
     </Link>
   );
