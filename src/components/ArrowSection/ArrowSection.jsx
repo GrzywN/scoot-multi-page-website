@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SectionCard from "./SectionCard.jsx";
+import SectionCard from "./ArrowSectionCard";
 
 import circle from "../../assets/patterns/circle.svg";
 
 const RIGHT = "RIGHT";
 
-function Section(props) {
+function ArrowSection(props) {
   const {
     imageHref,
     arrowTo,
@@ -59,7 +59,7 @@ function Section(props) {
   );
 }
 
-Section.propTypes = {
+ArrowSection.propTypes = {
   className: PropTypes.string,
   imageHref: PropTypes.string.isRequired,
   arrowTo: PropTypes.string.isRequired,
@@ -71,7 +71,7 @@ Section.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-Section.defaultProps = {
+ArrowSection.defaultProps = {
   className: "",
   ctaText: "Learn More",
   ctaTo: "",
@@ -79,4 +79,4 @@ Section.defaultProps = {
   hasLargerGap: false,
 };
 
-export default Section;
+export default ArrowSection;

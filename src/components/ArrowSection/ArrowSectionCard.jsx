@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import CTA from "../CTA";
 
-function SectionCard(props) {
+function ArrowSectionCard(props) {
   const { className, title, description, ctaText, to } = props;
 
   return (
@@ -40,7 +40,7 @@ function SectionCard(props) {
   );
 }
 
-SectionCard.propTypes = {
+ArrowSectionCard.propTypes = {
   className: PropTypes.string,
   to: PropTypes.string,
   title: PropTypes.string.isRequired,
@@ -48,9 +48,9 @@ SectionCard.propTypes = {
   ctaText: PropTypes.string.isRequired,
 };
 
-SectionCard.defaultProps = {
+ArrowSectionCard.defaultProps = {
   className: "",
   to: null,
 };
 
-export default SectionCard;
+export default ArrowSectionCard;

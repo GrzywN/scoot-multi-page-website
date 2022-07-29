@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../../components/Section";
+import ArrowSection from "../../components/ArrowSection";
 import { LeftBottomLongUpward, RightTopLongDownward } from "../SectionArrows";
 import EnumerationSection from "../../components/EnumerationSection";
 
@@ -20,7 +20,7 @@ function AboutSections() {
       md:mt-[9rem] md:mb-[7.5rem]
       xl:my-[7.5rem]"
     >
-      <Section
+      <ArrowSection
         imageHref={imageDigitalEra}
         arrowTo={LEFT}
         decoration={<LeftBottomLongUpward />}
@@ -29,7 +29,7 @@ function AboutSections() {
         Getting around should be simple (and even fun!) for everyone. We embrace technology to 
         provide low cost, smart access to scooters at your fingertips."
       />
-      <Section
+      <ArrowSection
         imageHref={imageBetterLiving}
         arrowTo={RIGHT}
         decoration={<RightTopLongDownward />}

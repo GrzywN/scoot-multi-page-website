@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../../components/Section";
+import ArrowSection from "../../components/ArrowSection";
 
 import imageTelemetry from "../../assets/images/telemetry.jpg";
 import imageNearYou from "../../assets/images/near-you.jpg";
@@ -21,7 +21,7 @@ function HomeSections() {
       md:mt-[9.0625rem] md:mb-[6.5rem] md:gap-[7.5rem]
       xl:my-[12.5rem] xl:gap-40"
     >
-      <Section
+      <ArrowSection
         imageHref={imageTelemetry}
         arrowTo={LEFT}
         ctaTo="/about"
@@ -31,7 +31,7 @@ function HomeSections() {
         average speed, how long you've been using the scooter, your traveling distance, 
         and many more things all in an easy to use app."
       />
-      <Section
+      <ArrowSection
         className="md:mt-2 xl:mt-0"
         imageHref={imageNearYou}
         arrowTo={RIGHT}
@@ -43,7 +43,7 @@ function HomeSections() {
         to let us know if you want to see us in your hometown. We’re aiming to let our 
         scooters loose on 23 cities over the coming year."
       />
-      <Section
+      <ArrowSection
         imageHref={imagePayments}
         arrowTo={LEFT}
         ctaTo="/about"

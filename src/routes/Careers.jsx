@@ -1,6 +1,6 @@
 import React from "react";
 import SmallHero from "../components/Heros/LowHero";
-import Section from "../components/Section";
+import ArrowSection from "../components/ArrowSection";
 import EnumerationSection from "../components/EnumerationSection";
 import CareersCard from "../components/CareersSection";
 import { LeftBottomLongDownward } from "../containers/SectionArrows";
@@ -22,7 +22,7 @@ function Careers() {
         xl:bg-careers-location-hero-desktop"
         title="Careers"
       />
-      <Section
+      <ArrowSection
         className="
         mt-[4.5rem]
         md:mt-36
