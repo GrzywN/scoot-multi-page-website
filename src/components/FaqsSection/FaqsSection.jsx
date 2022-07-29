@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Accordion from "../Accordion";
 
-function FAQs({ faqsData, className }) {
+function FaqsSection({ faqsData, className }) {
   return (
     <div
       className={`${className} 
@@ -44,7 +44,7 @@ function FAQs({ faqsData, className }) {
   );
 }
 
-FAQs.propTypes = {
+FaqsSection.propTypes = {
   faqsData: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -59,8 +59,8 @@ FAQs.propTypes = {
   className: PropTypes.string,
 };
 
-FAQs.defaultProps = {
+FaqsSection.defaultProps = {
   className: "",
 };
 
-export default FAQs;
+export default FaqsSection;
