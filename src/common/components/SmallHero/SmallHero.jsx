@@ -4,7 +4,7 @@ import { WhiteCircles } from "/src/common/components/Patterns";
 
 function SmallHero({ className, title }) {
   return (
-    <div className={`${className} w-full`}>
+    <div className={`${className} w-full bg-cover bg-center`}>
       <div
         className={` 
         relative mx-auto flex h-40 w-full max-w-[90rem] items-center justify-center

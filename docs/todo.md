@@ -3,4 +3,3 @@
 
 - SocialItem component + animacje
 - Liste też do komponentu
-- Zmienic tla na shorthero
