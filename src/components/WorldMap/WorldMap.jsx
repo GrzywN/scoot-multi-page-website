@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ImageWorldMapMobile from "../../assets/images/world-map-mobile.png";
-import ImageWorldMapTablet from "../../assets/images/world-map-tablet.png";
-import ImageWorldMapDesktop from "../../assets/images/world-map-desktop.png";
+import imageWorldMapMobile from "../../assets/images/world-map-mobile.png";
+import imageWorldMapTablet from "../../assets/images/world-map-tablet.png";
+import imageWorldMapDesktop from "../../assets/images/world-map-desktop.png";
 
 const breakpoints = {
   tablet: "(min-width: 48em)",
@@ -19,9 +19,9 @@ function WorldMap({ className }) {
   return (
     <div className={`${className} flex flex-col items-center gap-10 px-8`}>
       <picture>
-        <source media={breakpoints.desktop} srcSet={ImageWorldMapDesktop} />
-        <source media={breakpoints.tablet} srcSet={ImageWorldMapTablet} />
-        <img src={ImageWorldMapMobile} alt="World map" />
+        <source media={breakpoints.desktop} srcSet={imageWorldMapDesktop} />
+        <source media={breakpoints.tablet} srcSet={imageWorldMapTablet} />
+        <img src={imageWorldMapMobile} alt="World map" />
       </picture>
       <div
         className="

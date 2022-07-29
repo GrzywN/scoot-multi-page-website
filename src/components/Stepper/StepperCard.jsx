@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Card({ icon, title, description }) {
+function StepperCard({ icon, title, description }) {
   return (
     <div
       className="
@@ -36,10 +36,10 @@ function Card({ icon, title, description }) {
   );
 }
 
-Card.propTypes = {
+StepperCard.propTypes = {
   icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
 
-export default Card;
+export default StepperCard;

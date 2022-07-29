@@ -2,15 +2,15 @@ import React from "react";
 import { MainHero } from "../components/Heros";
 import Stepper from "../components/Stepper";
 import { ArrowSection } from "../components/Sections";
-
-import imageTelemetry from "../assets/images/telemetry.jpg";
-import imageNearYou from "../assets/images/near-you.jpg";
-import imagePayments from "../assets/images/payments.jpg";
 import {
   LeftBottomLongDownward,
   LeftTopShortDownward,
   RightTopShortDownward,
 } from "../components/StyledSectionArrows";
+
+import imageTelemetry from "../assets/images/telemetry.jpg";
+import imageNearYou from "../assets/images/near-you.jpg";
+import imagePayments from "../assets/images/payments.jpg";
 
 import { LEFT, RIGHT } from "../utils/constants";
 

@@ -19,6 +19,5 @@ module.exports = {
   plugins: ["react", "prettier", "tailwindcss"],
   rules: {
     "import/no-extraneous-dependencies": "off",
-    "import/extensions": "off",
   },
 };
