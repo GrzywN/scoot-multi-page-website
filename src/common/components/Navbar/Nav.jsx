@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import CTA from "/src/common/components/CTA/";
 import { Link } from "react-router-dom";
 
-function Nav({ isVisible }) {
+function Nav({ isVisible, onClick }) {
   const [navVisibleClasses, navNotVisibleClasses] = [
     "scale-x-100 opacity-100",
     "scale-x-0 opacity-0",
@@ -22,22 +22,29 @@ function Nav({ isVisible }) {
         md:flex md:gap-8 md:text-15 md:text-dim-grey"
       >
         <li>
-          <Link to="/about">About</Link>
+          <Link onClick={onClick} to="/about">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/locations">Location</Link>
+          <Link onClick={onClick} to="/locations">
+            Location
+          </Link>
         </li>
         <li>
-          <Link to="/careers">Careers</Link>
+          <Link onClick={onClick} to="/careers">
+            Careers
+          </Link>
         </li>
       </ul>
-      <CTA to="#download" text="Get Scootin" />
+      <CTA onClick={onClick} to="#download" text="Get Scootin" />
     </nav>
   );
 }
 
 Nav.propTypes = {
   isVisible: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Nav;

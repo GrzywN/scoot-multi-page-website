@@ -2,9 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function CTA({ className, to, text }) {
+function CTA(props) {
+  const { onClick, className, to, text } = props;
+
   return (
     <Link
+      onClick={onClick}
       to={to}
       className={`
       ${className}
@@ -18,12 +21,14 @@ function CTA({ className, to, text }) {
 }
 
 CTA.propTypes = {
+  onClick: PropTypes.func,
   className: PropTypes.string,
   to: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
 CTA.defaultProps = {
+  onClick: null,
   className: "",
 };
 
