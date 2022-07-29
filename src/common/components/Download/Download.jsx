@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import DownloadButton from "./DownloadButton";
-import AppStoreIcon from "/src/assets/icons/app-store.svg";
-import GooglePlayIcon from "/src/assets/icons/google-play.svg";
+import AppStoreIcon from "/src/assets/icons/app-store-2.svg";
+import GooglePlayIcon from "/src/assets/icons/google-play-2.svg";
 
 function Download({ className }) {
   return (
