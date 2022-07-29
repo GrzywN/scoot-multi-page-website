@@ -29,7 +29,7 @@ function Accordion({ className, contentsData }) {
         return (
           <div
             className="
-            relative overflow-hidden bg-snow p-8
+            relative overflow-hidden bg-snow p-8 transition-colors duration-500 ease-in-out focus-within:bg-light-yellow hover:bg-light-yellow
             md:pl-10"
             key={control}
           >
