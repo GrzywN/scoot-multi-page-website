@@ -44,6 +44,10 @@ module.exports = {
         "careers-location-hero-desktop":
           "url(src/assets/images/careers-locations-hero-desktop.jpg)",
       },
+      transitionDuration: {
+        400: "0.4s",
+        800: "0.8s",
+      },
     },
   },
   plugins: [],

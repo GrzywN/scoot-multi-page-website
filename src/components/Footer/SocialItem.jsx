@@ -5,7 +5,7 @@ function SocialItem({ className, href, src, alt }) {
   return (
     <li
       className={`${className} 
-      transition-transform duration-500 ease-in-out will-change-transform focus-within:scale-125 hover:scale-125`}
+      transition-transform duration-400 ease-in-out will-change-transform focus-within:scale-125 hover:scale-125`}
     >
       <a href={href} target="_blank" rel="noreferrer">
         <img src={src} alt={alt} />

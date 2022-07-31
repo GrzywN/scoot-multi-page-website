@@ -10,7 +10,7 @@ function Logo({ className }) {
       <button
         type="button"
         className={`${className} 
-        transition-transform duration-500 ease-in-out will-change-transform focus-within:scale-105 hover:scale-105`}
+        transition-transform duration-400 ease-in-out will-change-transform focus-within:scale-105 hover:scale-105`}
       >
         <img src={logo} alt="scoot" />
       </button>

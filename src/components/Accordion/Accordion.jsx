@@ -29,7 +29,7 @@ function Accordion({ className, contentsData }) {
         return (
           <div
             className="
-            relative overflow-hidden bg-snow p-8 transition-colors duration-500 ease-in-out focus-within:bg-light-yellow hover:bg-light-yellow
+            relative overflow-hidden bg-snow p-8 transition-colors duration-400 ease-in-out focus-within:bg-light-yellow hover:bg-light-yellow
             md:pl-10"
             key={control}
           >
@@ -50,7 +50,7 @@ function Accordion({ className, contentsData }) {
                 <span className="tracking-tighter">{control}</span>
                 <img
                   className={`${isItemActive ? "rotate-180" : ""}
-                  transition-transform duration-500 ease-in-out`}
+                  transition-transform duration-400 ease-in-out`}
                   src={iconChevron}
                   alt=""
                 />
@@ -59,7 +59,7 @@ function Accordion({ className, contentsData }) {
             <div
               className={`
               ${isItemActive ? "pt-6 opacity-100" : "h-0 opacity-0 "}
-              w-full transition-[opacity_height] duration-500`}
+              w-full transition-[opacity_height] duration-400`}
               id={`panel-${index}`}
               role="region"
               aria-labelledby={`control-${index}`}

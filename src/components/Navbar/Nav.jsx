@@ -10,7 +10,7 @@ function Nav({ isVisible, onClick }) {
   ];
 
   const linkClasses = `
-    relative duration-500 ease-in-out
+    relative duration-400 ease-in-out
     md:before:absolute md:before:bottom-0 md:before:h-1 md:before:w-full md:before:translate-y-3
       md:before:scale-x-0 md:before:bg-yellow md:before:rounded-full
         md:before:transition-transform md:before:content-[''] md:hover:before:scale-x-100 md:focus-within:before:scale-x-100`;
@@ -19,7 +19,7 @@ function Nav({ isVisible, onClick }) {
     <nav
       className={`${isVisible ? navVisibleClasses : navNotVisibleClasses} 
       fixed top-16 bottom-0 left-0 z-50 flex w-full max-w-[16rem] origin-top-left flex-col 
-        justify-between bg-dark-navy px-8 pb-6 pt-16 transition duration-500 ease-in-out 
+        justify-between bg-dark-navy px-8 pb-6 pt-16 transition duration-400 ease-in-out 
       md:static md:max-w-none md:scale-x-100 md:flex-row md:items-center md:bg-white md:p-0 md:opacity-100`}
     >
       <ul
