@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import { Home, About, Careers, Locations } from "./pages";
 import { DownloadCtaSection } from "./components/Sections";
@@ -28,14 +27,12 @@ function App() {
         mt-16 overflow-x-hidden
         md:mt-0"
       >
-        <AnimatePresence exitBeforeEnter initial>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/locations" element={<Locations />} />
-          </Routes>
-        </AnimatePresence>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/locations" element={<Locations />} />
+        </Routes>
         <DownloadCtaSection />
       </main>
       <Footer />
