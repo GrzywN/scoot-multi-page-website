@@ -7,7 +7,7 @@ const pageTransitionVariant = {
 };
 
 const createOpacityVariants = ({ order = 0 }) => {
-  const calulatedDelay = order * DEFAULT_DURATION;
+  const calculatedDelay = order * DEFAULT_DURATION;
   return {
     initial: { opacity: 0 },
     animate: {
@@ -15,14 +15,14 @@ const createOpacityVariants = ({ order = 0 }) => {
       transition: {
         duration: DEFAULT_DURATION,
         ease: DEFAULT_EASE,
-        delay: calulatedDelay,
+        delay: calculatedDelay,
       },
     },
   };
 };
 
 const createPathVariants = ({ order = 0, rotate180 = false }) => {
-  const calulatedDelay = order * DEFAULT_DURATION;
+  const calculatedDelay = order * DEFAULT_DURATION;
   return {
     initial: {
       opacity: 0,
@@ -35,7 +35,7 @@ const createPathVariants = ({ order = 0, rotate180 = false }) => {
       transition: {
         duration: DEFAULT_DURATION,
         ease: DEFAULT_EASE,
-        delay: calulatedDelay,
+        delay: calculatedDelay,
       },
     },
   };
