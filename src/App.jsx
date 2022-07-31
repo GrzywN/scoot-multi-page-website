@@ -36,8 +36,8 @@ function App() {
             <Route path="/locations" element={<Locations />} />
           </Routes>
         </AnimatePresence>
+        <DownloadCtaSection />
       </main>
-      <DownloadCtaSection />
       <Footer />
     </>
   );
