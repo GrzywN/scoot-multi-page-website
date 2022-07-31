@@ -1,11 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { LowHero } from "../components/Heros";
 import WorldMap from "../components/WorldMap";
 import { CtaSection } from "../components/Sections";
+import { initial, animate } from "../utils/constants";
+import { pageTransitionVariant } from "../utils/animationsVariantsFactory";
 
 function Locations() {
   return (
-    <>
+    <motion.div
+      initial={initial}
+      animate={animate}
+      variants={pageTransitionVariant}
+    >
       <LowHero
         className="
         bg-careers-location-hero-mobile
@@ -26,7 +33,7 @@ function Locations() {
         to="#"
         ctaText="Message Us"
       />
-    </>
+    </motion.div>
   );
 }
 

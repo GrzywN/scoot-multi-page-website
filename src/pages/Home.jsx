@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { MainHero } from "../components/Heros";
 import Stepper from "../components/Stepper";
 import { ArrowSection } from "../components/Sections";
@@ -15,31 +16,37 @@ import imageTelemetry from "../assets/images/telemetry.jpg";
 import imageNearYou from "../assets/images/near-you.jpg";
 import imagePayments from "../assets/images/payments.jpg";
 
-import { LEFT, RIGHT } from "../utils/constants";
+import { LEFT, RIGHT, initial, animate } from "../utils/constants";
+import { pageTransitionVariant } from "../utils/animationsVariantsFactory";
 
 function Home() {
   return (
-    <>
-      <MainHero 
+    <motion.div
+      initial={initial}
+      animate={animate}
+      variants={pageTransitionVariant}
+    >
+      <MainHero
         title="Scooter sharing made simple"
         description="Scoot takes the hassle out of urban mobility. Our bikes are placed
         in convenient locations in each of our cities. Use our app to locate
         the nearest bike, unlock it with a tap, and you’re away!"
         ctaText="Get Scootin"
       />
-      <Stepper 
-        cardsIcons={[iconLocate, iconRide, iconScooter]} 
+      <Stepper
+        cardsIcons={[iconLocate, iconRide, iconScooter]}
         cardsTitles={["Locate with app", "Pick your scooter", "Enjoy the ride"]}
         cardsDescriptions={[
-        `Use the app to find the nearest scooter to you. We are continuously
+          `Use the app to find the nearest scooter to you. We are continuously
         placing scooters in the areas with most demand, so one should never be
         too far away.`,
-        `We show the most important info for the scooters closest to you. So
+          `We show the most important info for the scooters closest to you. So
         you know how much charge they have left and can see roughly how much
         it will cost.`,
-        `Scan the QR code and the bike will unlock. Retract the cable lock, put
+          `Scan the QR code and the bike will unlock. Retract the cable lock, put
         on a helmet, and you’re off! Always lock bikes away from walkways and
-        accessibility ramps.`]}
+        accessibility ramps.`,
+        ]}
       />
       <div
         className="
@@ -81,7 +88,7 @@ function Home() {
           You can defer payment for up to a month."
         />
       </div>
-    </>
+    </motion.div>
   );
 }
 

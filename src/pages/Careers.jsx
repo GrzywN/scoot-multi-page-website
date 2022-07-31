@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { LowHero } from "../components/Heros";
 import {
   ArrowSection,
@@ -12,11 +13,16 @@ import imageOurTech from "../assets/images/our-tech.jpg";
 import imageOurIntegrity from "../assets/images/our-integrity.jpg";
 import imageOurCommunity from "../assets/images/our-community.jpg";
 
-import { LEFT } from "../utils/constants";
+import { LEFT, initial, animate } from "../utils/constants";
+import { pageTransitionVariant } from "../utils/animationsVariantsFactory";
 
 function Careers() {
   return (
-    <>
+    <motion.div
+      initial={initial}
+      animate={animate}
+      variants={pageTransitionVariant}
+    >
       <LowHero
         className="
         bg-careers-location-hero-mobile
@@ -58,7 +64,7 @@ function Careers() {
         md:mt-[7.5rem] 
         xl:mb-[10rem]"
       />
-    </>
+    </motion.div>
   );
 }
 

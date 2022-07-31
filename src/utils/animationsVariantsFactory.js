@@ -1,5 +1,10 @@
-const DEFAULT_DURATION = 1;
+const DEFAULT_DURATION = 0.8;
 const DEFAULT_EASE = "easeInOut";
+
+const pageTransitionVariant = {
+  initial: { y: 10, opacity: 0 },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.8 } },
+};
 
 const createOpacityVariants = ({ order = 0 }) => {
   const calulatedDelay = order * DEFAULT_DURATION;
@@ -36,4 +41,4 @@ const createPathVariants = ({ order = 0, rotate180 = false }) => {
   };
 };
 
-export { createOpacityVariants, createPathVariants };
+export { pageTransitionVariant, createOpacityVariants, createPathVariants };

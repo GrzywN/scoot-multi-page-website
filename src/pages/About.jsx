@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { LowHero } from "../components/Heros";
 import {
   ArrowSection,
@@ -9,7 +10,6 @@ import {
   LeftBottomLongUpward,
   RightTopLongDownward,
 } from "../components/StyledSectionArrows";
-import { LEFT, RIGHT } from "../utils/constants";
 
 import imageDigitalEra from "../assets/images/digital-era.jpg";
 import imageBetterLiving from "../assets/images/better-living.jpg";
@@ -17,9 +17,16 @@ import imageOurTech from "../assets/images/our-tech.jpg";
 import imageOurIntegrity from "../assets/images/our-integrity.jpg";
 import imageOurCommunity from "../assets/images/our-community.jpg";
 
+import { LEFT, RIGHT, initial, animate } from "../utils/constants";
+import { pageTransitionVariant } from "../utils/animationsVariantsFactory";
+
 function About() {
   return (
-    <>
+    <motion.div
+      initial={initial}
+      animate={animate}
+      variants={pageTransitionVariant}
+    >
       <LowHero
         className="
         bg-about-hero-mobile
@@ -118,7 +125,7 @@ function About() {
           },
         ]}
       />
-    </>
+    </motion.div>
   );
 }
 
