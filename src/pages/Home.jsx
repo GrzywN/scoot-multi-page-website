@@ -34,7 +34,7 @@ function Home() {
         ctaText="Get Scootin"
       />
       <Stepper
-        cardsIcons={[iconLocate, iconRide, iconScooter]}
+        cardsIcons={[iconLocate, iconScooter, iconRide]}
         cardsTitles={["Locate with app", "Pick your scooter", "Enjoy the ride"]}
         cardsDescriptions={[
           `Use the app to find the nearest scooter to you. We are continuously
