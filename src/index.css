@@ -3,13 +3,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
 }
-
-/* *,
-*::before,
-*::after {
-  outline: 1px dashed indigo;
-} */
