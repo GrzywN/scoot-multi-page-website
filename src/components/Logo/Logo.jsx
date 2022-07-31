@@ -6,14 +6,13 @@ import logo from "../../assets/logo.svg";
 
 function Logo({ className }) {
   return (
-    <Link to="/">
-      <button
-        type="button"
-        className={`${className} 
-        transition-transform duration-400 ease-in-out will-change-transform focus-within:scale-105 hover:scale-105`}
-      >
-        <img src={logo} alt="scoot" />
-      </button>
+    <Link
+      className={`${className} 
+      transition-transform duration-400 ease-in-out will-change-transform focus-within:scale-105 hover:scale-105`}
+      to="/"
+      tabIndex={0}
+    >
+      <img src={logo} alt="scoot" />
     </Link>
   );
 }

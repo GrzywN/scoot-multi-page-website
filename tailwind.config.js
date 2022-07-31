@@ -46,7 +46,6 @@ module.exports = {
       },
       transitionDuration: {
         400: "0.4s",
-        800: "0.8s",
       },
     },
   },
