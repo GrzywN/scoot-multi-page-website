@@ -1,5 +1,4 @@
-const DEFAULT_DURATION = 0;
-// const DEFAULT_DURATION = 0.8;
+const DEFAULT_DURATION = 0.8;
 const DEFAULT_EASE = "easeInOut";
 
 const pageTransitionVariant = {
